@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* Color variables for future use */
+  :root {
+    /* --color-bg: #fcfaf8; */
+    --color-bg: theme(colors.slate.50);
+    /* --color-primary: #14cf93; */
+    --color-primary: theme(colors.emerald.400);
+    /* --color-text: #383838; */
+    --color-text: theme(colors.slate.700);
+    /* --color-dark-1: #282828; */
+    --color-dark-1: theme(colors.slate.800);
+    /* --color-dark-2: #a2a2a2; */
+    --color-dark-2: theme(colors.slate.400);
+  }
+
+  body {
+    font-size: 20px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  @font-face {
+    font-family: 'agustina';
+    src: url('../fonts/Agustina-Signature.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'mazius';
+    src: url('../fonts/Mazius Display Extraitalic.otf') format('opentype');
+  }
+}

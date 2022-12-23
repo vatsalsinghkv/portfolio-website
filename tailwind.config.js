@@ -6,7 +6,13 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        signature: ['agustina', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        accent: ['mazius', 'serif'],
+      },
+    },
   },
   plugins: [],
-}
+};
