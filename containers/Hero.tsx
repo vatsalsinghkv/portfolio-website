@@ -7,11 +7,11 @@ const Hero = () => {
   return (
     <Wrapper
       id="hero"
-      className="min-h-screen h-full flex flex-col justify-center gap-6 xs:gap-7 mt-16 sm:mt-0"
+      className="min-h-screen h-full flex flex-col justify-center gap-6 xs:gap-7 mt-12 xs:mt-0"
     >
       <p className="text-sm sm:text-base text-accent font-mono">{subtitle}</p>
 
-      <div className="text-4xl xs:text-5xl sm:text-7xl font-bold tracking-tighter max-w-5xl">
+      <div className="text-4.5xl xs:text-5xl sm:text-7xl font-bold tracking-tighter max-w-5xl">
         <h1 className="text-slate-900 dark:text-slate-200 capitalize mb-2">
           {title}
         </h1>

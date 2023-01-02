@@ -26,6 +26,14 @@ module.exports = {
         'dark-2': 'var(--color-dark-2)',
         'dark-3': 'var(--color-dark-3)',
       },
+      fontSize: {
+        '4.5xl': [
+          '2.5rem',
+          {
+            lineHeight: '2.75rem',
+          },
+        ],
+      },
       transitionTimingFunction: {
         'in-scroll': 'cubic-bezier(0.645, 0.045, 0.355, 1)',
       },

@@ -29,13 +29,13 @@ const Navbar = () => {
   const [navbarCollapsed, setNavbarCollapsed] = useState(false);
 
   useEffect(() => {
-    hideNavWhileScrolling({ when: !navbarCollapsed, after: 45 });
+    hideNavWhileScrolling({ when: !navbarCollapsed });
   }, [navbarCollapsed]);
 
   return (
     <header
       id="navbar"
-      className="px-8 md:px-6 xl:px-12 py-4 fixed inset-x-0 right-0 flex justify-between items-end z-50 duration-500 backdrop-blur-lg"
+      className="px-8 md:px-6 xl:px-12 py-4 fixed inset-x-0 top-0 right-0 flex justify-between items-end z-50 duration-500 backdrop-blur-lg"
     >
       <h1 className="font-signature text-accent capitalize text-2xl relative group top-1">
         <a href="#hero" className="block">
