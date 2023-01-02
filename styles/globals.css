@@ -6,21 +6,31 @@
   /* Color variables for future use */
   :root {
     /* --color-bg: #fcfaf8; */
-    --color-bg: theme(colors.slate.50);
-    /* --color-primary: #14cf93; */
-    --color-primary: theme(colors.emerald.400);
+    /* --color-accent: #14cf93; */
+    /* --color-accent: #61dafb); */
     /* --color-text: #383838; */
-    --color-text: theme(colors.slate.700);
-    /* --color-dark-1: #282828; */
-    --color-dark-1: theme(colors.slate.800);
-    /* --color-dark-2: #a2a2a2; */
-    --color-dark-2: theme(colors.slate.400);
+    /* --color-dark-2: #282828; */
+    /* --color-dark-3: #a2a2a2; */
+
+    /* Light Theme */
+    --color-bg: theme(colors.slate.50);
+    --color-bg-secondary: theme(colors.white);
+    --color-accent: theme(colors.sky.500);
+    --color-text: theme(colors.slate.600);
+    --color-dark-1: theme(colors.slate.900);
+    --color-dark-2: theme(colors.slate.700);
+    --color-dark-3: theme(colors.slate.300);
   }
 
-  body {
-    font-size: 20px;
-    background-color: var(--color-bg);
-    color: var(--color-text);
+  /* Dark Theme */
+  .dark {
+    --color-bg: theme(colors.slate.900);
+    --color-bg-secondary: theme(colors.slate.800);
+    --color-accent: theme(colors.sky.400);
+    --color-text: theme(colors.slate.400);
+    --color-dark-1: theme(colors.slate.200);
+    --color-dark-2: theme(colors.slate.300);
+    --color-dark-3: theme(colors.slate.700);
   }
 
   @font-face {
@@ -28,8 +38,13 @@
     src: url('../fonts/Agustina-Signature.otf') format('opentype');
   }
 
-  @font-face {
-    font-family: 'mazius';
-    src: url('../fonts/Mazius Display Extraitalic.otf') format('opentype');
+  * {
+    @apply focus:outline-dashed outline-[3px] outline-offset-4 outline-accent;
   }
+}
+
+/* TYPOGRAPHY */
+
+.heading-secondary {
+  @apply text-3xl sm:text-4xl capitalize font-medium mb-8 sm:mb-12 text-dark-2;
 }
