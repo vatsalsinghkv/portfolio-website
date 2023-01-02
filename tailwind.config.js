@@ -14,6 +14,9 @@ module.exports = {
         sans: ['Inter', 'sans-serif'],
         mono: ['Roboto Mono', 'monospace'],
       },
+      screens: {
+        xs: '375px',
+      },
       colors: {
         bg: 'var(--color-bg)',
         'bg-secondary': 'var(--color-bg-secondary)',
@@ -28,6 +31,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         'auto-300': 'repeat(auto-fill, minmax(300px, 1fr))',
+        'auto-250': 'repeat(auto-fill, minmax(250px, 1fr))',
       },
     },
   },

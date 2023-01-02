@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <Wrapper id="projects">
       <h2 className="heading-secondary text-center !mb-12">{title}</h2>
-      <div className="grid grid-cols-auto-300 gap-6 place-items-center">
+      <div className="grid grid-cols-auto-250 xs:grid-cols-auto-300 gap-6 place-items-center">
         {sortByYear(topProjects).map((project) => (
           <ProjectCard {...project} key={getId()} />
         ))}

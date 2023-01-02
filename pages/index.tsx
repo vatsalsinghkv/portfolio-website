@@ -15,7 +15,6 @@ import {
 import { seoData } from '../utils/portfolio';
 
 /**
- * TODO: Add focus style
  * TODO: Add animations with framer motion
  * TODO: Find lottie files for dark mode
  * TODO: Create Dark Mode feature
