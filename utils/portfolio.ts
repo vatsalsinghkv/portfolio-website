@@ -190,7 +190,7 @@ export const projectsSection: ProjectsSectionType = {
     },
     {
       name: 'rock paper scissors',
-      url: 'rock-paper-scissors-kv.netlify.app/',
+      url: 'https://rock-paper-scissors-kv.netlify.app/',
       repo: 'https://github.com/vatsalsinghkv/rock-paper-scissors',
       img: 'https://user-images.githubusercontent.com/68834718/162578706-b9e57735-6fbc-4c7b-8243-2a6ba447404e.jpg',
       year: 2022,
