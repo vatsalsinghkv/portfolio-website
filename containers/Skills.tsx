@@ -12,7 +12,7 @@ const Skills = () => {
         {skills.map(({ lottie, softwareSkills, points, title }, i) => (
           <Skill
             key={getId()}
-            className={!(i % 2) ? 'lg:flex-row-reverse' : ''}
+            className="odd:lg:flex-row-reverse"
             lottie={lottie}
             skills={softwareSkills}
             points={points}
