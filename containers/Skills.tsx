@@ -1,9 +1,13 @@
 import { Skill, Wrapper } from '../components';
 import { skillsSection } from '../utils/portfolio';
 import { getId } from '../utils/helper';
+import { useContext } from 'react';
+import themeContext from '../context/theme-context';
 
 const Skills = () => {
   const { title, skills } = skillsSection;
+  const { isDark } = useContext(themeContext);
+
   return (
     <Wrapper tag="section" id="skills">
       <h2 className="heading-secondary text-center">{title}</h2>
@@ -13,7 +17,7 @@ const Skills = () => {
           <Skill
             key={getId()}
             className="odd:lg:flex-row-reverse"
-            lottie={lottie}
+            lottie={lottie[isDark ? 'dark' : 'light']}
             skills={softwareSkills}
             points={points}
             title={title}

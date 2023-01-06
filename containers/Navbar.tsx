@@ -1,7 +1,38 @@
 import { useEffect, useState } from 'react';
-import { Button, Link, NavButton } from '../components';
-import { getId, hideNavWhileScrolling } from '../utils/helper';
+import { Button, DarkModeButton, Link, NavButton } from '../components';
 import { author, navbarSection } from '../utils/portfolio';
+import { getId } from '../utils/helper';
+
+/**
+ * Hides the navbar while scrolling down
+ * @param {Object} config
+ * @param {String} [config.id=navbar] - id of navbar
+ * @param {Number} [config.offset=100] - offset of navbar in px
+ */
+
+const hideNavWhileScrolling = ({
+  id = 'navbar',
+  offset = 100,
+  when = true,
+}: {
+  id?: string;
+  offset?: number;
+  when: boolean;
+}) => {
+  const nav = document.getElementById(id);
+  if (!nav) return;
+
+  let prevScrollPos = window.pageYOffset;
+
+  window.onscroll = () => {
+    if (when) {
+      let curScrollPos = window.pageYOffset;
+      if (prevScrollPos < curScrollPos) nav.style.top = `-${offset}px`;
+      else nav.style.top = '0';
+      prevScrollPos = curScrollPos;
+    }
+  };
+};
 
 type Props = {
   href?: string;
@@ -64,11 +95,14 @@ const Navbar = () => {
             </NavItem>
           ))}
 
-          {cta && (
-            <Button type="link" href={cta.url}>
-              {cta.title}
-            </Button>
-          )}
+          <div className="flex justify-between gap-5 xl:gap-6">
+            {cta && (
+              <Button type="link" href={cta.url}>
+                {cta.title}
+              </Button>
+            )}
+            <DarkModeButton />
+          </div>
         </ul>
       </nav>
     </header>

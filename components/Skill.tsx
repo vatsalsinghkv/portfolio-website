@@ -35,7 +35,7 @@ const Skill = ({ lottie, title, skills, points, className = '' }: Props) => {
         </ul>
       </div>
       {/* Right */}
-      <ShowLottie path={lottie} />
+      <ShowLottie path={lottie} className="min-h-[448px] min-w-[448px]" />
     </div>
   );
 };

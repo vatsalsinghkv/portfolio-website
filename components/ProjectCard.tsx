@@ -15,7 +15,7 @@ const ProjectCard = ({ name, url, repo, year, img, tags }: ProjectType) => {
     <a
       href={url}
       target="_blank"
-      className="block group bg-bg-secondary w-full max-w-[350px] shadow-xl rounded-md overflow-hidden hover:-translate-y-1 transition-all duration-200"
+      className="block group bg-bg-secondary w-full max-w-[350px] shadow-xl dark:shadow-2xl rounded-md overflow-hidden hover:-translate-y-1 transition-all duration-200"
     >
       <div className="overflow-hidden h-[200px]">
         <Image

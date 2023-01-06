@@ -23,7 +23,7 @@ export const seoData = {
     'Vatsal Singh is a full-stack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
   image:
-    'https://user-images.githubusercontent.com/68834718/210201378-bfbf570d-5e35-4b47-9c53-ff51f51d87b6.png',
+    'https://user-images.githubusercontent.com/68834718/211054666-8d6ceaf6-91fb-4c55-9a71-b11cba3ccb45.png',
   url: 'https://vatsalsinghkv.vercel.app/',
   keywords: [
     'Vatsal',
@@ -91,7 +91,10 @@ export const skillsSection = {
     {
       title: 'full stack development',
       // animation lottie file: https://lottiefiles.com/
-      lottie: '/lotties/frontend.json',
+      lottie: {
+        light: '/lotties/frontend.json',
+        dark: '/lotties/frontend-dark.json',
+      },
       points: [
         'Building responsive static websites using Next.js',
         'Building responsive Single Page Apps in React.js',
@@ -119,7 +122,10 @@ export const skillsSection = {
     },
     {
       title: 'blockchain development',
-      lottie: '/lotties/ethereum.json',
+      lottie: {
+        light: '/lotties/ethereum.json',
+        dark: '/lotties/ethereum-dark.json',
+      },
       points: [
         'Experience in developing Smart Contract using Solidity & Ethereum',
         'Developing NFT Smart Contracts using ERC-721 Token Standard',
