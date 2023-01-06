@@ -101,7 +101,7 @@ const Navbar = () => {
                 {cta.title}
               </Button>
             )}
-            <DarkModeButton />
+            <DarkModeButton onClick={() => setNavbarCollapsed(false)} />
           </div>
         </ul>
       </nav>
