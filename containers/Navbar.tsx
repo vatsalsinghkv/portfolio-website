@@ -95,7 +95,7 @@ const Navbar = () => {
             </NavItem>
           ))}
 
-          <div className="flex justify-between gap-5 xl:gap-6">
+          <div className="flex justify-between gap-5 xl:gap-6 items-center">
             {cta && (
               <Button type="link" href={cta.url}>
                 {cta.title}

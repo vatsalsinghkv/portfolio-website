@@ -24,11 +24,11 @@ const Button = ({
 }: Props) => {
   const classes = `${
     size === 'sm'
-      ? 'p-2 px-4 text-xs border-[1.5px] '
+      ? 'p-2 px-4 text-sm border-[1.5px] '
       : 'text-sm p-4 px-6 border-2'
   } block ${
     center ? 'mx-auto' : ''
-  } w-fit font-mono capitalize rounded border-accent text-accent hover:bg-sky-500/10 focus:outline-none focus:bg-sky-500/10 duration-150 cursor-pointer ${className}`;
+  } w-fit font-mono capitalize rounded border-accent text-accent hover:bg-sky-500/20 focus:outline-none focus:bg-sky-500/10 duration-150 cursor-pointer ${className}`;
 
   if (type === 'link') {
     return (
