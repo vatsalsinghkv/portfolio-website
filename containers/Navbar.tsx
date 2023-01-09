@@ -89,7 +89,7 @@ const Navbar = () => {
         }`}
       >
         <ul
-          className={`list-style-none flex flex-col gap-3 lg:gap-5 xl:gap-6 md:flex-row items-stretch md:items-center ${
+          className={`list-style-none flex flex-col gap-3 lg:gap-5 xl:gap-6 md:flex-row items-stretch md:items-center md:visible ${
             navbarCollapsed ? 'visible' : 'invisible'
           }`}
         >
