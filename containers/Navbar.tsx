@@ -88,7 +88,11 @@ const Navbar = () => {
           navbarCollapsed ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
-        <ul className="list-style-none flex flex-col gap-3 lg:gap-5 xl:gap-6 md:flex-row items-stretch md:items-center">
+        <ul
+          className={`list-style-none flex flex-col gap-3 lg:gap-5 xl:gap-6 md:flex-row items-stretch md:items-center ${
+            navbarCollapsed ? 'visible' : 'invisible'
+          }`}
+        >
           {navLinks.map((link) => (
             <NavItem key={getId()} onClick={() => setNavbarCollapsed(false)}>
               {link}
