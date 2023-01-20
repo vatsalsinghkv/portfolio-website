@@ -184,7 +184,7 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/vatsalsinghkv/fylo',
       img: 'https://user-images.githubusercontent.com/68834718/212843973-ef864a5a-f393-4901-b422-6f775a043cdb.png',
       year: 2023,
-      tags: ['Html', 'Tailwind', 'TypeScript'],
+      tags: ['Html', 'Tailwind', 'TS'],
     },
     {
       name: 'remotive jobs',

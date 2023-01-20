@@ -31,7 +31,9 @@ const Projects = () => {
             }
           }}
         >
-          {projects.length === topProjects.length ? 'show less' : 'show more'}
+          {sortByYear(projects).length === topProjects.length
+            ? 'show less'
+            : 'show more'}
         </Button>
       )}
     </Wrapper>
