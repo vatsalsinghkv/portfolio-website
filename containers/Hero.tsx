@@ -11,11 +11,11 @@ const Hero = () => {
     >
       <p className="text-sm sm:text-base text-accent font-mono">{subtitle}</p>
 
-      <div className="text-4.5xl xs:text-5xl sm:text-7xl font-bold tracking-tighter max-w-5xl">
-        <h1 className="text-slate-900 dark:text-slate-200 capitalize mb-2">
+      <div className="text-4xl sm:text-7xl font-bold tracking-tighter max-w-5xl">
+        <h1 className="text-slate-900 dark:text-slate-200 capitalize mb-2 leading-[1.1]">
           {title}
         </h1>
-        <h1>{tagline}</h1>
+        <h1 className="leading-[1.2]">{tagline}</h1>
       </div>
 
       <p className="max-w-xl text-base sm:text-lg">{description}</p>

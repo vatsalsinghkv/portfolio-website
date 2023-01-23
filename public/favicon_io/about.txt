@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Unbounded
+- Font Author: Copyright 2022 The Unbounded Project Authors (https://github.com/googlefonts/unbounded)
+- Font Source: http://fonts.gstatic.com/s/unbounded/v3/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx043HgP6LR0Y.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

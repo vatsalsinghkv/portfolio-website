@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <Wrapper
       id="contact"
-      className="max-w-xl mx-auto text-center  !py-16 md:!py-24"
+      className="max-w-xl mx-auto text-center  !py-16 md:!py-24 mb-20 md:mb-32"
     >
       <p className="text-accent text-sm capitalize mb-3 font-mono">
         {subtitle}

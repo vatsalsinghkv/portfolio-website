@@ -2,15 +2,13 @@ import type { NextPage } from 'next';
 import { SEO } from '../components';
 import {
   About,
-  Email,
   Experience,
   Hero,
-  Navbar,
   Skills,
-  Social,
   Contact,
   Footer,
   Projects,
+  Layout,
 } from '../containers';
 import { seoData } from '../utils/portfolio';
 
@@ -25,18 +23,14 @@ const Home: NextPage = () => {
   return (
     <>
       <SEO {...seoData} />
-      <Navbar />
-      <main className="mx-auto px-6 sm:px-8 md:px-28 lg:px-20 xl:px-0 max-w-screen-lg">
+      <Layout>
         <Hero />
         <About />
         <Skills />
         <Experience />
         <Projects />
         <Contact />
-        <Footer />
-      </main>
-      <Social />
-      <Email />
+      </Layout>
     </>
   );
 };
