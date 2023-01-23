@@ -31,10 +31,6 @@ const SEO = (seoData: Props) => {
       <meta property="twitter:title" content={seoData.title} />
       <meta property="twitter:description" content={seoData.description} />
       <meta property="twitter:image" content={seoData.image} />
-      {/* Favicon */}
-      <link rel="apple-touch-icon" sizes="120x120" href="/code.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/code.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/code.png" />
     </Head>
   );
 };

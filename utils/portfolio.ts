@@ -196,7 +196,7 @@ export const projectsSection: ProjectsSectionType = {
     },
     {
       name: 'countries app',
-      url: 'https://rest-countries-kv.netlify.app/',
+      url: 'https://countries-app-kv.netlify.app/',
       repo: 'https://github.com/vatsalsinghkv/rest-countries-api',
       img: 'https://user-images.githubusercontent.com/68834718/169527851-19fefb2e-e440-411a-a8a1-4767e2c8688a.png',
       year: 2022,
