@@ -93,9 +93,13 @@ const Navbar = () => {
             navbarCollapsed ? 'visible' : 'invisible'
           }`}
         >
-          {navLinks.map((link) => (
-            <NavItem key={getId()} onClick={() => setNavbarCollapsed(false)}>
-              {link}
+          {navLinks.map(({ name, url }) => (
+            <NavItem
+              key={getId()}
+              href={url}
+              onClick={() => setNavbarCollapsed(false)}
+            >
+              {name}
             </NavItem>
           ))}
 

@@ -39,7 +39,13 @@ export const seoData = {
 // Navbar Section
 
 export const navbarSection = {
-  navLinks: ['about', 'skills', 'experience', 'projects', 'contact'],
+  navLinks: [
+    { name: 'about', url: '/#about' },
+    { name: 'skills', url: '/#skills' },
+    { name: 'experience', url: '/#experience' },
+    { name: 'projects', url: '/#projects' },
+    { name: 'contact', url: '/#contact' },
+  ],
   cta: {
     title: 'resume',
     url: '/api/resume',
