@@ -6,7 +6,6 @@ import {
   Hero,
   Skills,
   Contact,
-  Footer,
   Projects,
   Layout,
 } from '../containers';
