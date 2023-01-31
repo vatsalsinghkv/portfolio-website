@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 type Props = {
   children: React.ReactNode | string;
   className?: string;
@@ -30,9 +32,9 @@ const Button = ({
     center ? 'mx-auto' : ''
   } w-fit font-mono capitalize rounded border-accent text-accent hover:bg-sky-500/20 focus:outline-none focus:bg-sky-500/10 duration-150 cursor-pointer ${className}`;
 
-  if (type === 'link') {
+  if (type === 'link' && href) {
     return (
-      <a
+      <Link
         className={classes}
         href={href}
         {...props}
@@ -40,14 +42,17 @@ const Button = ({
         rel="noopener noreferrer"
       >
         {children}
-      </a>
+      </Link>
     );
   }
-  return (
-    <button type={type} className={classes} onClick={onClick}>
-      {children}
-    </button>
-  );
+
+  if (type !== 'link') {
+    return (
+      <button type={type} className={classes} onClick={onClick}>
+        {children}
+      </button>
+    );
+  }
 };
 
 export default Button;
