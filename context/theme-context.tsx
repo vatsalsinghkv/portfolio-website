@@ -9,7 +9,7 @@ const initialState = {
 const ThemeContext = createContext(initialState);
 
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState<boolean>();
 
   const toggleTheme = useCallback(() => {
     setIsDark((prev) => !prev);
@@ -36,6 +36,8 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   }, [setIsDarkMode]);
 
   useEffect(() => {
+    if (isDark === undefined) return;
+
     if (isDark) {
       document.documentElement.classList.add('dark');
     } else {
@@ -44,7 +46,13 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   }, [isDark]);
 
   return (
-    <ThemeContext.Provider value={{ isDark, toggleTheme, setIsDarkMode }}>
+    <ThemeContext.Provider
+      value={{
+        isDark: isDark === undefined ? false : isDark,
+        toggleTheme,
+        setIsDarkMode,
+      }}
+    >
       {children}
     </ThemeContext.Provider>
   );

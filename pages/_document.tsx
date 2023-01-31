@@ -44,6 +44,7 @@ export default function Document() {
           sizes="16x16"
           href="/favicon_io/16x16.png"
         />
+        <script src="/no-flash.js"></script>
       </Head>
       <body className="text-text bg-bg">
         <Main />
