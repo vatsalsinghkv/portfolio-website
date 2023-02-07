@@ -1,27 +1,84 @@
-# Next.js + Tailwind CSS Example
+<h1 align="center">
+  vatsalsinghkv.vercel.app
+</h1>
+<p align="center">
+  A portfolio website i.e. <a href="vatsalsinghkv.vercel.app" target="_blank">vatsalsinghkv.vercel.app</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Vercel</a>
+</p>
+<p align="center">
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
+</p>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+[![My Portfolio](https://user-images.githubusercontent.com/68834718/214532356-7c56cdbd-0136-4d24-a532-d27e160ae72d.png)](https://vatsalsinghkv.vercel.app/)
 
-## Deploy your own
+## Sections
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+- Hero
+- About
+- Skills
+- Experience
+- Projects
+- Contact
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Built With
 
-## How to use
+- [Next.Js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/) - For animations
+- [Iconify](https://icon-sets.iconify.design/) - For icons
+- [Lottie Files](https://lottiefiles.com/) - For illustrations
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [yarn](https://yarnpkg.com) installed on your computer. From your command line:
+
+Fork this repository and clone the project
+
+###### Please give me proper credit by linking back to [vatsalsinghkv.vercel.app](vatsalsinghkv.vercel.app).
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+  git clone https://github.com/vatsalsinghkv/portfolio-website.git
 ```
+
+Go to the project directory
 
 ```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+  cd portfolio-website
 ```
+
+Install dependencies
 
 ```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+  yarn
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Start the server
+
+```bash
+  yarn dev
+```
+
+To change the content, edit `/utils/portfolio.ts`
+
+To change the _About Section_, edit `/containers/About.tsx`
+
+To change the theme, edit `/styles/globals.css`
+
+## Contact
+
+- Website - [vatsalsinghkv.vercel.app](vatsalsinghkv.vercel.app)
+- Github - [@vatsalsinghkv](https://github.com/vatsalsinghkv)
+- Twitter - [@vatsalsinghkv](https://www.twitter.com/vatsalsinghkv)
+- Instagram - [@vatsal.sing.hkv](https://www.instagram.com/vatsal.singh.kv)
+- Facebook - [@vatsalsinghkv](https://www.facebook.com/vatsal.singh.kv)
+- devChallenges - [@vatsalsinghkv](https://devchallenges.io/portfolio/vatsalsinghkv)
+- Frontend Mentor - [@vatsalsinghkv](https://www.frontendmentor.io/profile/vatsalsinghkv)
+
+## Acknowledgements
+
+- [https://developer-portfolio-1hanzla100.vercel.app/](https://developer-portfolio-1hanzla100.vercel.app/) - Design Inspiration
+- [https://brittanychiang.com/](https://brittanychiang.com/) - Design Inspiration
+
+## Show Your Support
+
+Give a ⭐️ if you liked this project!
