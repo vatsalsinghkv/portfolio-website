@@ -64,7 +64,7 @@
 
 - To change the content, edit `/utils/portfolio.ts`
 
-- To change the _About Section_, edit `/containers/About.tsx`
+- To change the **About Section**, edit `/containers/About.tsx`
 
 - To change the theme, edit `/styles/globals.css`
 
