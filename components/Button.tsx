@@ -53,6 +53,8 @@ const Button = ({
       </button>
     );
   }
+
+  return <></>;
 };
 
 export default Button;
