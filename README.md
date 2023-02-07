@@ -8,9 +8,9 @@
 
 <p align="center">
   <a href="https://choosealicense.com/licenses/mit/">
-    <img src="https://img.shields.io/badge/License-MIT-orange"/ >
+    <img src="https://img.shields.io/badge/License-MIT-red"/ >
   </a>
-  <img src="https://img.shields.io/badge/License-1.2.1-blue"/ >
+  <img src="https://img.shields.io/badge/Version-1.2.1-blue"/ >
 </p>
 
 [![My Portfolio](https://user-images.githubusercontent.com/68834718/214532356-7c56cdbd-0136-4d24-a532-d27e160ae72d.png)](https://vatsalsinghkv.vercel.app/)
