@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://choosealicense.com/licenses/mit/">
-    <img src="https://img.shields.io/badge/License-MIT-red"/ >
+    <img src="https://img.shields.io/badge/License-MIT-green"/ >
   </a>
   <img src="https://img.shields.io/badge/Version-1.2.1-blue"/ >
 </p>
