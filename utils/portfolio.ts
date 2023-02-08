@@ -18,7 +18,7 @@ export const author = {
 };
 
 export const seoData = {
-  title: 'Vatsal Singh',
+  title: 'Vatsal Singh | Full-Stack Developer',
   description:
     'Vatsal Singh is a full-stack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
