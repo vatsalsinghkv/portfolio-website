@@ -73,6 +73,7 @@
 
 - Website - [vatsalsinghkv.vercel.app](https://vatsalsinghkv.vercel.app)
 - Github - [@vatsalsinghkv](https://github.com/vatsalsinghkv)
+- LinkedIn - [@vatsalsinghkv](https://www.linkedin.com/in/vatsalsinghkv/)
 - Twitter - [@vatsalsinghkv](https://www.twitter.com/vatsalsinghkv)
 - Instagram - [@vatsalsinghkv](https://www.instagram.com/vatsalsinghkv)
 - Facebook - [@vatsalsinghkv](https://www.facebook.com/vatsal.singh.kv)
