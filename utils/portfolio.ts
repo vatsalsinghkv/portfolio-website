@@ -23,7 +23,7 @@ export const seoData = {
     'Vatsal Singh is a full-stack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
   image:
-    'https://user-images.githubusercontent.com/68834718/217462128-08568abc-f17a-4581-8b41-8227d9970cce.png',
+    'https://user-images.githubusercontent.com/68834718/217466292-715d2dc5-92a5-4989-8423-6b4d225791b5.png"',
   url: 'https://vatsalsinghkv.vercel.app/',
   keywords: [
     'Vatsal',
