@@ -1,29 +1,41 @@
 import Link from 'next/link';
 
-type Props = {
+interface DefaultProps {
   children: React.ReactNode | string;
   className?: string;
-  onClick?: (event: React.MouseEvent) => void;
-  href?: string;
-  type?: 'button' | 'link';
   variant?: 'solid' | 'outlined';
   size?: 'lg' | 'sm';
   center?: boolean;
-  newTab?: boolean;
-};
+}
 
-const Button = ({
-  className,
-  children,
-  onClick,
-  type = 'button',
-  variant = 'solid',
-  size = 'sm',
-  href,
-  center = false,
-  newTab = true,
-  ...props
-}: Props) => {
+interface LinkProps extends DefaultProps {
+  href: string;
+  sameTab?: boolean;
+}
+
+interface ButtonProps extends DefaultProps {
+  onClick?: (event: React.MouseEvent) => void;
+}
+
+type Props =
+  | ({
+      type?: 'button';
+    } & ButtonProps)
+  | ({
+      type: 'link';
+    } & LinkProps);
+
+const Button = (props: Props) => {
+  const {
+    className,
+    children,
+    type = 'button',
+    variant = 'solid',
+    size = 'sm',
+    center = false,
+    ...rest
+  } = props;
+
   const classes = `${
     size === 'sm'
       ? 'p-2 px-4 text-sm border-[1.5px] '
@@ -32,23 +44,23 @@ const Button = ({
     center ? 'mx-auto' : ''
   } w-fit font-mono capitalize rounded border-accent text-accent hover:bg-sky-500/20 focus:outline-none focus:bg-sky-500/10 duration-150 cursor-pointer ${className}`;
 
-  if (type === 'link' && href) {
+  if (props.type === 'link') {
     return (
       <Link
         className={classes}
-        href={href}
-        {...props}
-        target={newTab ? '_blank' : '_self'}
+        href={props.href}
+        target={props.sameTab ? '_self' : '_blank'}
         rel="noopener noreferrer"
+        {...rest}
       >
         {children}
       </Link>
     );
   }
 
-  if (type !== 'link') {
+  if (type == 'button') {
     return (
-      <button type={type} className={classes} onClick={onClick}>
+      <button type={type} className={classes} onClick={props.onClick}>
         {children}
       </button>
     );

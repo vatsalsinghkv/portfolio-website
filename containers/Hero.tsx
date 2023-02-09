@@ -30,7 +30,7 @@ const Hero = () => {
           className={`mt-5 xs:mt-8 sm:mt-10 ${
             cta.hideInDesktop ? 'md:hidden' : ''
           }`}
-          newTab={cta?.newTab}
+          sameTab={cta?.sameTab}
         >
           {cta.title}
         </Button>

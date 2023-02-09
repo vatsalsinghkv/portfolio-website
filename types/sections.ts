@@ -13,7 +13,7 @@ export type HeroSectionType = {
     title: string;
     link: string;
     hideInDesktop?: boolean;
-    newTab?: boolean;
+    sameTab?: boolean;
   };
 } & Section;
 
