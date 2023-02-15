@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "check": "prettier --check .",
+    "lint": "prettier --write ."
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.0",
