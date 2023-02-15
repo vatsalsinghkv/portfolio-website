@@ -65,6 +65,8 @@
 
 - To change the content, edit `/utils/portfolio.ts`
 
+- To change the **resume**, change `/documents/resume.pdf` with your resume (name must be `resume.pdf`)
+
 - To change the **About Section**, edit `/containers/About.tsx`
 
 - To change the theme, edit `/styles/globals.css`
