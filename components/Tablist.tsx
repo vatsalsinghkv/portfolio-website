@@ -48,7 +48,7 @@ const Tablist = ({ experiences }: Props) => {
         {experiences.map(({ company }, i) => (
           <button
             key={getId()}
-            className={`h-10 min-w-[120px] sm:w-auto sm:px-5 sm:!text-left capitalize hover:bg-sky-500/10 hover:text-accent focus:outline-none focus:bg-sky-500/10 focus:text-accent ${
+            className={`h-10 min-w-[120px] sm:w-auto sm:px-5 sm:!text-left capitalize hover:bg-accent-light hover:text-accent focus:outline-none focus:bg-accent-light focus:text-accent ${
               i === activeExperience ? 'text-accent' : ''
             }`}
             onClick={() => setActiveExperience(i)}

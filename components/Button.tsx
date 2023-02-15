@@ -33,7 +33,6 @@ const Button = (props: Props) => {
     variant = 'solid',
     size = 'sm',
     center = false,
-    ...rest
   } = props;
 
   const classes = `${
@@ -42,7 +41,7 @@ const Button = (props: Props) => {
       : 'text-sm p-4 px-6 border-2'
   } block ${
     center ? 'mx-auto' : ''
-  } w-fit font-mono capitalize rounded border-accent text-accent hover:bg-sky-500/20 focus:outline-none focus:bg-sky-500/10 duration-150 cursor-pointer ${className}`;
+  } w-fit font-mono capitalize rounded border-accent text-accent hover:bg-accent-light focus:outline-none focus:bg-accent-light duration-150 cursor-pointer ${className}`;
 
   if (props.type === 'link') {
     return (
@@ -51,7 +50,6 @@ const Button = (props: Props) => {
         href={props.href}
         target={props.sameTab ? '_self' : '_blank'}
         rel="noopener noreferrer"
-        {...rest}
       >
         {children}
       </Link>

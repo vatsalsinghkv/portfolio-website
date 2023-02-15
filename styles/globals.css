@@ -17,6 +17,7 @@
     --color-bg: theme(colors.slate.50);
     --color-bg-secondary: theme(colors.white);
     --color-accent: theme(colors.sky.500);
+    --color-accent-light: theme(colors.sky.500/0.1);
     --color-text: theme(colors.slate.600);
     --color-dark-1: theme(colors.slate.900);
     --color-dark-2: theme(colors.slate.700);
@@ -28,6 +29,7 @@
     --color-bg: theme(colors.slate.900);
     --color-bg-secondary: theme(colors.slate.800);
     --color-accent: theme(colors.sky.400);
+    --color-accent-light: theme(colors.sky.400/0.1);
     --color-text: theme(colors.slate.400);
     --color-dark-1: theme(colors.slate.200);
     --color-dark-2: theme(colors.slate.300);
