@@ -3,6 +3,13 @@ import {
   HeroSectionType,
   ProjectsSectionType,
 } from '../types/sections';
+import { resumeFileName } from './config';
+
+/*
+ * =========================
+ * AUTHOR INFO
+ * =========================
+ */
 
 export const socialLinks = {
   facebook: 'https://www.facebook.com/vatsalsinghkv',
@@ -36,6 +43,12 @@ export const seoData = {
   ],
 };
 
+/*
+ * =========================
+ * SECTIONS
+ * =========================
+ */
+
 // Navbar Section
 
 export const navbarSection = {
@@ -48,7 +61,7 @@ export const navbarSection = {
   ],
   cta: {
     title: 'resume',
-    url: '/api/resume',
+    url: `/${resumeFileName}`,
   },
 };
 
@@ -64,7 +77,7 @@ export const heroSection: HeroSectionType = {
   // either button or simple text (information)
   cta: {
     title: 'see my resume',
-    link: '/api/resume',
+    link: `/${resumeFileName}`,
     hideInDesktop: true,
   },
 };
