@@ -71,6 +71,13 @@
 
 - To change the theme, edit `/styles/globals.css`
 
+## Continuous Development
+
+- Add animation with framer-motion
+- Separate route (archive) for all the projects with filters
+- Add test cases
+- Switch to Next 13
+
 ## Contact
 
 - Website - [vatsalsinghkv.vercel.app](https://vatsalsinghkv.vercel.app)
