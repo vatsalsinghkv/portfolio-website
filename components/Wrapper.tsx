@@ -1,22 +1,48 @@
-import React from 'react';
+import { ReactNode, HTMLAttributes, ElementType } from 'react';
+import { motion, MotionProps } from 'framer-motion';
 
-type Props = {
-  tag?: keyof JSX.IntrinsicElements;
+interface Props extends HTMLAttributes<HTMLElement> {
+  as?: ElementType;
   className?: string;
-  children: React.ReactNode;
+  children: ReactNode;
   id?: string;
-};
+  animate?: boolean;
+}
 
-const Wrapper: React.FC<Props> = ({
+const Wrapper = ({
   children,
-  tag = 'section',
+  as = 'section',
   className = '',
   id = '',
-}: Props) => {
-  const CustomTag = tag;
+  animate = true,
+  ...rest
+}: Props & MotionProps) => {
+  if (animate) {
+    const MotionTag = motion(as);
+
+    return (
+      <MotionTag id={id} className={`py-24 md:py-32 ${className}`} {...rest}>
+        {children}
+      </MotionTag>
+    );
+  }
+
+  if (as === 'section') {
+    return (
+      <motion.section
+        id={id}
+        className={`py-24 md:py-32 ${className}`}
+        {...rest}
+      >
+        {children}
+      </motion.section>
+    );
+  }
+
+  const CustomTag = `${as}` as ElementType;
 
   return (
-    <CustomTag id={id} className={`py-24 md:py-32 ${className}`}>
+    <CustomTag id={id} className={`py-24 md:py-32 ${className}`} {...rest}>
       {children}
     </CustomTag>
   );

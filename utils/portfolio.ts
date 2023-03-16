@@ -1,9 +1,17 @@
 import {
+  AboutSectionType,
+  ContactSectionType,
   ExperienceSectionType,
+  FooterSectionType,
   HeroSectionType,
+  NavbarSectionType,
   ProjectsSectionType,
+  SkillsSectionType,
+  SocialSectionType,
 } from '../types/sections';
+import { StringKeyValueType } from '../types';
 import { resumeFileName } from './config';
+import { getId } from './helper';
 
 /*
  * =========================
@@ -11,7 +19,7 @@ import { resumeFileName } from './config';
  * =========================
  */
 
-export const socialLinks = {
+export const socialLinks: StringKeyValueType = {
   facebook: 'https://www.facebook.com/vatsalsinghkv',
   instagram: 'https://www.instagram.com/vatsalsinghkv',
   twitter: 'https://twitter.com/vatsalsinghkv',
@@ -51,7 +59,7 @@ export const seoData = {
 
 // Navbar Section
 
-export const navbarSection = {
+export const navbarSection: NavbarSectionType = {
   navLinks: [
     { name: 'about', url: '/#about' },
     { name: 'skills', url: '/#skills' },
@@ -65,7 +73,7 @@ export const navbarSection = {
   },
 };
 
-// Hero Section
+// * Hero Section
 
 export const heroSection: HeroSectionType = {
   subtitle: 'Hi, my name is',
@@ -77,14 +85,14 @@ export const heroSection: HeroSectionType = {
   // either button or simple text (information)
   cta: {
     title: 'see my resume',
-    link: `/${resumeFileName}`,
+    url: `/${resumeFileName}`,
     hideInDesktop: true,
   },
 };
 
-// About Section
+// * About Section
 
-export const aboutSection = {
+export const aboutSection: AboutSectionType = {
   title: 'about me',
   // Paragraphs need to be changed from containers/About.tsx
   // Because it wasn't possible to insert anchor tags like this
@@ -102,12 +110,13 @@ export const aboutSection = {
   img: '/vatsal-singh.jpg',
 };
 
-// Skills Section
+// * Skills Section
 
-export const skillsSection = {
+export const skillsSection: SkillsSectionType = {
   title: 'what i do',
   skills: [
     {
+      id: getId(),
       title: 'full stack development',
       // animation lottie file: https://lottiefiles.com/
       lottie: {
@@ -140,6 +149,7 @@ export const skillsSection = {
       ],
     },
     {
+      id: getId(),
       title: 'blockchain development',
       lottie: {
         light: '/lotties/ethereum.json',
@@ -160,7 +170,7 @@ export const skillsSection = {
   ],
 };
 
-// Experience Section
+// * Experience Section
 
 export const experienceSection: ExperienceSectionType = {
   title: "where i've worked",
@@ -170,7 +180,7 @@ export const experienceSection: ExperienceSectionType = {
       companyUrl: 'https://webnetics.vercel.app/',
       role: 'frontend developer',
       started: 'june 2022',
-      upto: 'present',
+      upto: 'january 2023',
       tasks: [
         'Built static frontend UI from the ground up using Next.js and Figma handover designs.',
         'Architected the folder structure and initial setup of the app.',
@@ -192,12 +202,13 @@ export const experienceSection: ExperienceSectionType = {
   ],
 };
 
-// Projects Section
+// * Projects Section
 
 export const projectsSection: ProjectsSectionType = {
   title: 'my projects',
   projects: [
     {
+      id: getId(),
       name: 'fylo landing page',
       url: 'https://fylo-kv.netlify.app/',
       repo: 'https://github.com/vatsalsinghkv/fylo',
@@ -206,6 +217,7 @@ export const projectsSection: ProjectsSectionType = {
       tags: ['Html', 'Tailwind', 'TS'],
     },
     {
+      id: getId(),
       name: 'remotive jobs',
       url: 'https://remotive-jobs.vercel.app/',
       repo: 'https://github.com/vatsalsinghkv/remotive-jobs',
@@ -214,6 +226,7 @@ export const projectsSection: ProjectsSectionType = {
       tags: ['Nextjs', 'Sass'],
     },
     {
+      id: getId(),
       name: 'countries app',
       url: 'https://countries-app-kv.netlify.app/',
       repo: 'https://github.com/vatsalsinghkv/rest-countries-api',
@@ -222,6 +235,7 @@ export const projectsSection: ProjectsSectionType = {
       tags: ['React', 'Sass'],
     },
     {
+      id: getId(),
       name: 'rock paper scissors',
       url: 'https://rock-paper-scissors-kv.netlify.app/',
       repo: 'https://github.com/vatsalsinghkv/rock-paper-scissors',
@@ -230,6 +244,7 @@ export const projectsSection: ProjectsSectionType = {
       tags: ['React', 'Sass'],
     },
     {
+      id: getId(),
       name: 'todo app',
       url: 'https://todo-kv.netlify.app/',
       repo: 'https://github.com/vatsalsinghkv/todo-app',
@@ -238,6 +253,7 @@ export const projectsSection: ProjectsSectionType = {
       tags: ['React', 'Sass', 'JS'],
     },
     {
+      id: getId(),
       name: 'weather app',
       url: 'https://weather-kv.netlify.app/',
       repo: 'https://github.com/vatsalsinghkv/weather-app',
@@ -246,6 +262,7 @@ export const projectsSection: ProjectsSectionType = {
       tags: ['Html', 'sass', 'JS', 'jQuery'],
     },
     {
+      id: getId(),
       name: 'blogr landing page',
       url: 'https://blogr-kv.netlify.app/',
       repo: 'https://github.com/vatsalsinghkv/blogr-landing-page',
@@ -254,6 +271,7 @@ export const projectsSection: ProjectsSectionType = {
       tags: ['html', 'sass', 'JS'],
     },
     {
+      id: getId(),
       name: 'natours',
       url: 'https://natours-kv.netlify.app/',
       repo: 'https://github.com/vatsalsinghkv/natours',
@@ -270,6 +288,7 @@ export const projectsSection: ProjectsSectionType = {
     //   tags: ['html', 'sass'],
     // },
     {
+      id: getId(),
       name: 'IP address tracker',
       url: 'https://vatsalsinghkv.github.io/ip-address-tracker/',
       repo: 'https://github.com/vatsalsinghkv/ip-address-tracker',
@@ -278,6 +297,7 @@ export const projectsSection: ProjectsSectionType = {
       tags: ['html', 'bootstrap', 'JS'],
     },
     {
+      id: getId(),
       name: 'calculator app',
       url: 'https://vatsalsinghkv.github.io/calculator-app/',
       repo: 'https://github.com/vatsalsinghkv/calculator-app/',
@@ -286,6 +306,7 @@ export const projectsSection: ProjectsSectionType = {
       tags: ['html', 'CSS', 'JS'],
     },
     {
+      id: getId(),
       name: 'pig game',
       url: 'https://vatsalsinghkv.github.io/pig-game/',
       repo: 'https://github.com/vatsalsinghkv/pig-game',
@@ -294,6 +315,7 @@ export const projectsSection: ProjectsSectionType = {
       tags: ['html', 'CSS', 'JS'],
     },
     {
+      id: getId(),
       name: 'bankist marketing',
       url: 'https://vatsalsinghkv.github.io/bankist-marketing/',
       repo: 'https://github.com/vatsalsinghkv/bankist-marketing',
@@ -302,6 +324,7 @@ export const projectsSection: ProjectsSectionType = {
       tags: ['html', 'CSS', 'JS'],
     },
     {
+      id: getId(),
       name: 'digital clock',
       url: 'https://vatsalsinghkv.github.io/digital-clock/',
       repo: 'https://github.com/vatsalsinghkv/digital-clock',
@@ -312,9 +335,9 @@ export const projectsSection: ProjectsSectionType = {
   ],
 };
 
-// Contact Section
+// * Contact Section
 
-export const contactSection = {
+export const contactSection: ContactSectionType = {
   title: 'get in touch',
   subtitle: "what's next",
   paragraphs: [
@@ -326,7 +349,7 @@ export const contactSection = {
 
 // Social Links Section
 
-export const socialSection = {
+export const socialSection: SocialSectionType = {
   socialLinks: [
     {
       icon: 'tabler:brand-github',
@@ -353,7 +376,7 @@ export const socialSection = {
 
 // Footer Section
 
-export const footerSection = {
+export const footerSection: FooterSectionType = {
   title: 'Design & Built by Vatsal Singh',
   link: 'https://github.com/vatsalsinghkv/portfolio-website',
 };

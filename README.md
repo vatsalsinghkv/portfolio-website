@@ -10,7 +10,7 @@
   <a href="https://choosealicense.com/licenses/mit/">
     <img src="https://img.shields.io/badge/License-MIT-brightgreen"/ >
   </a>
-  <img src="https://img.shields.io/badge/Version-1.2.1-blue"/ >
+  <img src="https://img.shields.io/badge/Version-1.3.0-blue"/ >
 </p>
 
 [![My Portfolio](https://user-images.githubusercontent.com/68834718/214532356-7c56cdbd-0136-4d24-a532-d27e160ae72d.png)](https://vatsalsinghkv.vercel.app/)
@@ -63,20 +63,21 @@
   yarn dev
 ```
 
-- To change the content, edit `/utils/portfolio.ts`
+- To change the content, edit `src/lib/portfolio.ts`
 
-- To change the **resume**, change `/public/resume.pdf` with your resume (name must be `resume.pdf`)
+- To change the **resume**, change `src/public/resume.pdf` with your resume (name must be `resume.pdf`)
 
-- To change the **About Section**, edit `/containers/About.tsx`
+- To change the **About Section**, edit `src/containers/About.tsx`
 
-- To change the theme, edit `/styles/globals.css`
+- To change the theme, edit `src/styles/globals.css`
 
 ## Continuous Development
 
-- Add animation with framer-motion
-- Separate route (archive) for all the projects with filters
-- Add test cases
-- Switch to Next 13
+- [x] Add animation with framer-motion
+- [ ] Add Content Management System (CMS)
+- [ ] Add test cases
+- [ ] Separate route (archive) for all the projects with filters
+- [ ] Switch to Next 13
 
 ## Contact
 

@@ -1,7 +1,8 @@
+import { useEffect, useState } from 'react';
 import { HeroImage, ListItem, Wrapper, Link } from '../components';
+import { getSectionAnimation } from '../animations';
 import { aboutSection, author } from '../utils/portfolio';
 import { getId } from '../utils/helper';
-import { useEffect, useState } from 'react';
 
 const About = () => {
   const { title, img, list } = aboutSection;
@@ -13,7 +14,7 @@ const About = () => {
   }, []);
 
   return domLoaded ? (
-    <Wrapper id="about">
+    <Wrapper id="about" {...getSectionAnimation}>
       <h2 className="heading-secondary">{title}</h2>
       <main className="flex gap-16 items-center lg:items-start flex-col lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
@@ -24,7 +25,6 @@ const About = () => {
           <p>
             Fast-forward to today, and I’ve had the privilege of working at a
             start-up -{' '}
-            {/* idk why using Link component here giving hydration failed error */}
             <Link
               href="https://webnetics.vercel.app/"
               target="_blank"

@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { motion, MotionProps } from 'framer-motion';
+import { removeKeys } from '../utils/helper';
 
 interface DefaultProps {
   children: React.ReactNode | string;
@@ -25,7 +27,18 @@ type Props =
       type: 'link';
     } & LinkProps);
 
-const Button = (props: Props) => {
+// For separating animation props from button props
+const buttonProps: Array<keyof Props | keyof LinkProps> = [
+  'center',
+  'children',
+  'className',
+  'size',
+  'variant',
+  'type',
+  'href',
+];
+
+const Button = (props: Props & MotionProps) => {
   const {
     className,
     children,
@@ -33,6 +46,7 @@ const Button = (props: Props) => {
     variant = 'solid',
     size = 'sm',
     center = false,
+    ...rest
   } = props;
 
   const classes = `${
@@ -43,16 +57,22 @@ const Button = (props: Props) => {
     center ? 'mx-auto' : ''
   } w-fit font-mono capitalize rounded border-accent text-accent hover:bg-accent-light focus:outline-none focus:bg-accent-light duration-150 cursor-pointer ${className}`;
 
+  // TODO: Needs to improve this framer motion logic
   if (props.type === 'link') {
+    const { sameTab, ...motionProps } = props;
+    removeKeys<Props & LinkProps>(motionProps, buttonProps);
+
     return (
-      <Link
-        className={classes}
-        href={props.href}
-        target={props.sameTab ? '_self' : '_blank'}
-        rel="noopener noreferrer"
-      >
-        {children}
-      </Link>
+      <motion.span {...motionProps}>
+        <Link
+          className={classes}
+          href={props.href}
+          target={sameTab ? '_self' : '_blank'}
+          rel="noopener noreferrer"
+        >
+          {children}
+        </Link>
+      </motion.span>
     );
   }
 

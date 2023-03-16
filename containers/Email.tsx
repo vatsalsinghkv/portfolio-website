@@ -1,4 +1,3 @@
-import React from 'react';
 import { Sidebar, SocialLink } from '../components';
 import { author } from '../utils/portfolio';
 

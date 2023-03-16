@@ -1,12 +1,11 @@
 import { Icon } from '@iconify/react';
+import { SocialLinkType } from '../types';
 import SocialLink from './SocialLink';
 
-type Props = { icon: string; href: string };
-
-const SocialIcon = ({ icon, href }: Props) => {
+const SocialIcon = ({ icon, url }: SocialLinkType) => {
   return (
     <li>
-      <SocialLink href={href}>
+      <SocialLink href={url}>
         <Icon icon={icon} width={24} height={24} />
       </SocialLink>
     </li>

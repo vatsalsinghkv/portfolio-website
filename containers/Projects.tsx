@@ -1,39 +1,62 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { Button, ProjectCard, Wrapper } from '../components';
-import { noOfProjectsInitially } from '../utils/config';
-import { getId, sortByYear } from '../utils/helper';
+import { PROJECTS_INITIALLY } from '../utils/config';
+import { sortByYear } from '../utils/helper';
 import { projectsSection } from '../utils/portfolio';
+import { getSectionAnimation, projectVariants } from '../animations';
 
 const Projects = () => {
   const { projects, title } = projectsSection;
-  const [topProjects, setTopProjects] = useState(
-    projects.slice(0, noOfProjectsInitially)
-  );
+  const [showMore, setShowMore] = useState(false);
+  const topProjects = projects.slice(0, PROJECTS_INITIALLY);
+
+  const visibleProjects = showMore ? projects : topProjects;
 
   return (
-    <Wrapper id="projects">
-      <h2 className="heading-secondary text-center !mb-12">{title}</h2>
+    <Wrapper id="projects" animate={false}>
+      <motion.h2
+        {...getSectionAnimation}
+        className="heading-secondary text-center !mb-12"
+      >
+        {title}
+      </motion.h2>
       <div className="grid grid-cols-auto-250 xs:grid-cols-auto-300 gap-6 place-items-center">
-        {sortByYear(topProjects).map((project) => (
-          <ProjectCard {...project} key={getId()} />
-        ))}
+        {sortByYear(visibleProjects).map((project, i) => {
+          if (i < PROJECTS_INITIALLY) {
+            return (
+              <ProjectCard
+                {...project}
+                key={project.id}
+                variants={projectVariants}
+                initial="hidden"
+                whileInView="show"
+                custom={i}
+                viewport={{ once: true }}
+              />
+            );
+          }
+
+          return (
+            <ProjectCard
+              {...project}
+              key={project.id}
+              variants={projectVariants}
+              initial="hidden"
+              animate="show"
+              custom={i - PROJECTS_INITIALLY}
+            />
+          );
+        })}
       </div>
-      {projects.length > noOfProjectsInitially && (
+      {projects.length > PROJECTS_INITIALLY && (
         <Button
           size="lg"
           className="!mt-20"
           center
-          onClick={() => {
-            if (projects.length === topProjects.length) {
-              setTopProjects(projects.slice(0, 6));
-            } else {
-              setTopProjects(projects);
-            }
-          }}
+          onClick={() => setShowMore((prev) => !prev)}
         >
-          {sortByYear(projects).length === topProjects.length
-            ? 'show less'
-            : 'show more'}
+          {showMore ? 'show less' : 'show more'}
         </Button>
       )}
     </Wrapper>

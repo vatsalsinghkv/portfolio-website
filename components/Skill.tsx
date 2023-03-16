@@ -1,20 +1,28 @@
-import React from 'react';
+import { motion, MotionProps } from 'framer-motion';
 import { ListItem, ShowLottie, SkillIcon } from '.';
-import { SkillType } from '../types';
+import { SoftwareSkillType } from '../types';
 import { getId } from '../utils/helper';
 
 type Props = {
   lottie?: any;
   title: string;
   points: string[];
-  skills: SkillType[];
+  skills: SoftwareSkillType[];
   className?: string;
-};
+} & MotionProps;
 
-const Skill = ({ lottie, title, skills, points, className = '' }: Props) => {
+const Skill = ({
+  lottie,
+  title,
+  skills,
+  points,
+  className = '',
+  ...rest
+}: Props) => {
   return (
-    <div
+    <motion.div
       className={`flex gap-8 sm:gap-10 flex-col lg:flex-row items-center ${className}`}
+      {...rest}
     >
       {/* Left */}
       <div className="space-y-14 lg:w-1/2">
@@ -36,7 +44,7 @@ const Skill = ({ lottie, title, skills, points, className = '' }: Props) => {
       </div>
       {/* Right */}
       <ShowLottie path={lottie} className="md:min-h-[448px] md:min-w-[448px]" />
-    </div>
+    </motion.div>
   );
 };
 

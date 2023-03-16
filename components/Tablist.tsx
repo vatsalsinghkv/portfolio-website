@@ -1,13 +1,9 @@
-//@ts-nocheck
-import { useEffect, useState } from 'react';
-import resolveConfig from 'tailwindcss/resolveConfig';
-import tailwindConfig from '../tailwind.config.js';
-import ListItem from './ListItem';
+import { useState } from 'react';
 import Link from './Link';
+import ListItem from './ListItem';
+import useWindowWidth from '../hooks/use-window-width';
 import { ExperienceType } from '../types';
-import { getId } from '../utils/helper';
-
-const fullConfig = resolveConfig(tailwindConfig);
+import { getBreakpointsWidth, getId } from '../utils/helper';
 
 type Props = {
   experiences: ExperienceType[];
@@ -15,12 +11,12 @@ type Props = {
 
 const Tablist = ({ experiences }: Props) => {
   const [activeExperience, setActiveExperience] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(0);
+  const windowWidth = useWindowWidth();
 
   const { role, company, companyUrl, started, upto, tasks } =
     experiences[activeExperience];
-  const sm = +fullConfig?.theme?.screens?.sm.slice(0, -2);
-  // ! Property 'sm' does not exist on type 'ResolvableTo<ScreensConfig>'
+
+  const sm = getBreakpointsWidth('sm');
 
   const sliderStyle =
     windowWidth <= sm
@@ -30,16 +26,6 @@ const Tablist = ({ experiences }: Props) => {
       : {
           top: `calc(${activeExperience}*2.5rem)`,
         };
-
-  if (typeof window !== 'undefined') {
-    window.addEventListener('resize', () => {
-      setWindowWidth(window.innerWidth);
-    });
-  }
-
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-  }, []);
 
   return (
     <div className="flex flex-col sm:flex-row text-sm md:text-base gap-6 md:gap-10 min-h-[250px]">

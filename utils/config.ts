@@ -1,4 +1,4 @@
-export const noOfProjectsInitially = 6;
+export const PROJECTS_INITIALLY = 6;
 
 export const resumeFileName = 'resume.pdf';
 
