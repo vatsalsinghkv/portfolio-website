@@ -38,7 +38,7 @@
 
   @font-face {
     font-family: 'agustina';
-    src: url('../fonts/Agustina-Signature.otf') format('opentype');
+    src: url('/fonts/Agustina-Signature.otf') format('opentype');
   }
 
   * {

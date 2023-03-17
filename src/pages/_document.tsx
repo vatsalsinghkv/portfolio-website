@@ -18,33 +18,33 @@ export default function Document() {
         <link
           rel="apple-touch-icon"
           sizes="120x120"
-          href="/favicon_io/apple-touch-icon.png"
+          href="/favicons/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="512x512"
-          href="/favicon_io/android-chrome-512x512.png"
+          href="/favicons/android-chrome-512x512.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href="/favicon_io/android-chrome-192x192.png"
+          href="/favicons/android-chrome-192x192.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon_io/32x32.png"
+          href="/favicons/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon_io/16x16.png"
+          href="/favicons/favicon-16x16.png"
         />
-        <script src="/no-flash.js"></script>
+        <script src="/scripts/no-flash.js"></script>
       </Head>
       <body className="text-text bg-bg">
         <Main />
