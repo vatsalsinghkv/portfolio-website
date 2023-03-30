@@ -23,8 +23,13 @@ const ProjectCard = ({
 
   return domLoaded ? (
     <motion.div {...rest} className="w-full max-w-[350px]">
-      <button
-        onClick={() => window.open(url)}
+      <div
+        onClick={(e) => {
+          // Run this only if the clicked target is not an anchor element
+          if (!(e.target as HTMLElement).closest('a')) {
+            window.open(url);
+          }
+        }}
         className="group bg-bg-secondary block w-full shadow-xl dark:shadow-2xl rounded-md overflow-hidden transition-all duration-200"
       >
         <div className="overflow-hidden h-[200px]">
@@ -63,7 +68,7 @@ const ProjectCard = ({
             <span className="mr-1">{year}</span>
           </h4>
         </div>
-      </button>
+      </div>
     </motion.div>
   ) : (
     <></>
