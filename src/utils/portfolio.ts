@@ -177,7 +177,7 @@ export const experienceSection: ExperienceSectionType = {
   experiences: [
     {
       company: 'webnetics',
-      companyUrl: 'https://webnetics.vercel.app/',
+      companyUrl: 'https://webnetic.vercel.app/',
       role: 'frontend developer',
       started: 'june 2022',
       upto: 'january 2023',
