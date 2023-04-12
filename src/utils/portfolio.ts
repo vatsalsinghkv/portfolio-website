@@ -80,7 +80,9 @@ export const heroSection: HeroSectionType = {
   title: 'vatsal singh.',
   tagline: 'I create visually pleasing interfaces for the web.',
   description:
-    "I'm a passionate Full Stack web developer having an experience of web  applications with React.js, Next.js and Blockchain development on Ethereum, Solidity and Web3.js.",
+    "I'm a passionate Full Stack web developer having an experience of web applications with React.js & Next.js with TypeScript & TailwindCSS and UI/UX designing.",
+  // description:
+  //   "I'm a passionate Full Stack web developer having an experience of web  applications with React.js, Next.js and Blockchain development on Ethereum, Solidity and Web3.js.",
   specialText: 'Currently available for remote job & freelance',
   // either button or simple text (information)
   cta: {
