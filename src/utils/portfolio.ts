@@ -142,6 +142,7 @@ export const skillsSection: SkillsSectionType = {
         { name: 'nodejs', icon: 'logos:nodejs-icon' },
         { name: 'reactjs', icon: 'logos:react' },
         { name: 'nextjs', icon: 'logos:nextjs-icon' },
+        // { name: 'angularjs', icon: 'logos:angular-icon' },
         { name: 'tailwindcss', icon: 'logos:tailwindcss-icon' },
         { name: 'redux', icon: 'logos:redux' },
         { name: 'database', icon: 'vscode-icons:file-type-sql' },
@@ -149,6 +150,24 @@ export const skillsSection: SkillsSectionType = {
       ],
     },
     {
+      id: getId(),
+      title: 'UI/UX designing',
+      lottie: {
+        light: '/lotties/designing.json',
+        dark: '/lotties/designing-dark.json',
+      },
+      points: [
+        'Experience in designing user-friendly interfaces with figma',
+        'Experience in developing design systems and style guides',
+        'Providing user-friendly design solutions',
+      ],
+      softwareSkills: [
+        { name: 'figma', icon: 'logos:figma' },
+        { name: 'adobe illustrator', icon: 'logos:adobe-illustrator' },
+        { name: 'adobe photoshop', icon: 'logos:adobe-photoshop' },
+      ],
+    },
+    /* {
       id: getId(),
       title: 'blockchain development',
       lottie: {
@@ -166,7 +185,7 @@ export const skillsSection: SkillsSectionType = {
         { name: 'web3js', icon: 'logos:web3js' },
         { name: 'metamask', icon: 'logos:metamask-icon' },
       ],
-    },
+    }, */
   ],
 };
 
