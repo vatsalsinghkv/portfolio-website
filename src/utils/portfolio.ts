@@ -33,9 +33,9 @@ export const author = {
 };
 
 export const seoData = {
-  title: 'Vatsal Singh | Full-Stack Developer',
+  title: 'Vatsal Singh | Front-End Developer',
   description:
-    'Vatsal Singh is a full-stack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'Vatsal Singh is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
   image:
     'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
@@ -80,7 +80,7 @@ export const heroSection: HeroSectionType = {
   title: 'vatsal singh.',
   tagline: 'I create visually pleasing interfaces for the web.',
   description:
-    "I'm a passionate Full Stack web developer having an experience of web applications with React.js & Next.js with TypeScript & TailwindCSS and UI/UX designing.",
+    "I'm a passionate Front-End web developer having an experience of web applications with React.js & Next.js with TypeScript & TailwindCSS and UI/UX designing.",
   // description:
   //   "I'm a passionate Full Stack web developer having an experience of web  applications with React.js, Next.js and Blockchain development on Ethereum, Solidity and Web3.js.",
   specialText: 'Currently available for remote job & freelance',
