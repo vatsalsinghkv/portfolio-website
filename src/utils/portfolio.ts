@@ -106,7 +106,7 @@ export const aboutSection: AboutSectionType = {
       'ExpressJs',
       'Solidity',
       'TypeScript',
-      'Web3Js',
+      'CSS Animations',
     ],
   },
   img: '/vatsal-singh.jpg',
@@ -196,6 +196,18 @@ export const skillsSection: SkillsSectionType = {
 export const experienceSection: ExperienceSectionType = {
   title: "where i've worked",
   experiences: [
+    {
+      company: 'SHMTH Capitals',
+      companyUrl: 'https://www.linkedin.com/company/shmth-capital/about/',
+      role: 'frontend developer intern',
+      started: 'april 2023',
+      upto: 'july 2023',
+      tasks: [
+        'Built trading platform using TradingView library.',
+        'Designed SHMTH Capital website with Next.js, TypeScript & TailwindCSS.',
+        'Collaborated with diverse nationwide team of developers.',
+      ],
+    },
     {
       company: 'webnetics',
       companyUrl: 'https://webnetic.vercel.app/',
