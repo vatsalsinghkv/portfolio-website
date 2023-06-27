@@ -30,7 +30,7 @@ const Tablist = ({ experiences }: Props) => {
   return (
     <div className="flex flex-col sm:flex-row text-sm md:text-base gap-6 md:gap-10 min-h-[250px]">
       {/* Sidebar */}
-      <div className="font-mono text-xs sm:text-sm relative flex justify-start sm:flex-col overflow-scroll sm:overflow-auto sm:min-w-[150px]">
+      <div className="font-mono text-xs sm:text-sm relative flex justify-start sm:flex-col overflow-scroll sm:overflow-auto sm:min-w-[180px]">
         {experiences.map(({ company }, i) => (
           <button
             key={getId()}
@@ -50,15 +50,15 @@ const Tablist = ({ experiences }: Props) => {
         ></div>
       </div>
 
-      <div key={getId()} className="space-y-5 p-1">
+      <div key={getId()} className="p-1 space-y-5">
         <div className="space-y-1">
-          <h3 className="text-lg font-medium text-dark-2 capitalize">
+          <h3 className="text-lg font-medium capitalize text-dark-2">
             {role}{' '}
             <Link href={companyUrl} target="_blank" className="text-accent">
               @{company}
             </Link>
           </h3>
-          <p className="text-xs font-mono capitalize">
+          <p className="font-mono text-xs capitalize">
             <>
               {started} - {upto}
             </>
