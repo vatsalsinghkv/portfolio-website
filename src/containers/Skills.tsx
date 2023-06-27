@@ -10,7 +10,7 @@ const Skills = () => {
 
   return (
     <Wrapper id="skills" {...getSectionAnimation}>
-      <h2 className="heading-secondary text-center">{title}</h2>
+      <h2 className="text-center heading-secondary">{title}</h2>
 
       <div className="space-y-32">
         {skills.map(({ id, lottie, softwareSkills, points, title }) => (

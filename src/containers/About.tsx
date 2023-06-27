@@ -16,7 +16,7 @@ const About = () => {
   return domLoaded ? (
     <Wrapper id="about" {...getSectionAnimation}>
       <h2 className="heading-secondary">{title}</h2>
-      <main className="flex gap-16 items-center lg:items-start flex-col lg:flex-row">
+      <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
             Hi, my name is Vatsal Singh, an artist as well as crazy full stack
@@ -42,7 +42,7 @@ const About = () => {
           {list && (
             <>
               <p>{list.title}</p>
-              <ul className="text-sm gap-1 grid grid-cols-2 w-2/3">
+              <ul className="grid w-2/3 grid-cols-2 gap-1 text-sm">
                 {list.items.map((item) => (
                   <ListItem key={getId()}>{item}</ListItem>
                 ))}

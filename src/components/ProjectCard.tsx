@@ -29,7 +29,7 @@ const ProjectCard = ({
           if ((e.target as HTMLElement).closest('a')) return;
           window.open(url);
         }}
-        className="group bg-bg-secondary block w-full shadow-xl dark:shadow-2xl rounded-md overflow-hidden transition-all duration-200"
+        className="block w-full overflow-hidden transition-all duration-200 rounded-md shadow-xl group bg-bg-secondary dark:shadow-2xl"
       >
         <div className="overflow-hidden h-[200px]">
           <Image
@@ -39,30 +39,30 @@ const ProjectCard = ({
             height={300}
             placeholder="blur"
             blurDataURL={blurImageURL}
-            className="w-full h-full object-cover"
+            className="object-cover w-full h-full"
           />
         </div>
         <div className="p-4 py-3 space-y-1">
-          <div className="flex justify-between items-center">
-            <p className="text-xs capitalize font-mono">{tags.join(' | ')}</p>
+          <div className="flex items-center justify-between">
+            <p className="font-mono text-xs capitalize">{tags.join(' | ')}</p>
             <div className="flex items-center space-x-1.5">
               <a
                 href={repo}
-                className="block hover:text-accent duration-200"
+                className="block duration-200 hover:text-accent"
                 target="_blank"
               >
                 <Icon icon="tabler:brand-github" width={20} height={20} />
               </a>
               <a
                 href={url}
-                className="block hover:text-accent duration-200"
+                className="block duration-200 hover:text-accent"
                 target="_blank"
               >
                 <Icon icon="ci:external-link" width={22} height={22} />
               </a>
             </div>
           </div>
-          <h4 className="flex justify-between group-hover:text-accent capitalize font-medium duration-200">
+          <h4 className="flex justify-between font-medium capitalize duration-200 group-hover:text-accent">
             <span>{name}</span>
             <span className="mr-1">{year}</span>
           </h4>

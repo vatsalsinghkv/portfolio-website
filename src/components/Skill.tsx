@@ -26,17 +26,17 @@ const Skill = ({
     >
       {/* Left */}
       <div className="space-y-14 lg:w-1/2">
-        <h3 className="capitalize text-2xl sm:text-3xl text-center mb-5">
+        <h3 className="mb-5 text-2xl text-center capitalize sm:text-3xl">
           {title}
         </h3>
 
-        <div key={getId()} className="flex gap-2 justify-center flex-wrap">
+        <div key={getId()} className="flex flex-wrap justify-center gap-2">
           {skills.map(({ name, icon }) => (
             <SkillIcon key={getId()} src={icon} name={name} />
           ))}
         </div>
 
-        <ul className="text-base space-y-2">
+        <ul className="space-y-2 text-base">
           {points.map((point) => (
             <ListItem key={getId()}>{point}</ListItem>
           ))}

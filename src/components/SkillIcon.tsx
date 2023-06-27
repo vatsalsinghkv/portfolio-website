@@ -7,12 +7,12 @@ type Props = {
 
 const SkillIcon = ({ src, name }: Props) => {
   return (
-    <div className="text-2xl relative bg-bg-secondary shadow-md dark:shadow-xl rounded-full h-14 w-14 sm:h-16 sm:w-16 grid place-items-center group">
+    <div className="relative grid text-2xl rounded-full shadow-md bg-bg-secondary dark:shadow-xl h-14 w-14 sm:h-16 sm:w-16 place-items-center group">
       <Icon icon={src} width="32" height="32" />
-      <div className="opacity-0 invisible w-max group-hover:opacity-100 group-hover:visible absolute -top-8 rounded capitalize bg-slate-900/75 dark:bg-slate-700/90 text-white dark:text-slate-100 py-1 px-2 text-sm duration-200">
+      <div className="absolute invisible px-2 py-1 text-sm text-white capitalize duration-200 rounded opacity-0 w-max group-hover:opacity-100 group-hover:visible -top-8 bg-slate-900/75 dark:bg-slate-700/90 dark:text-slate-100">
         {name}
         <svg
-          className="absolute text-slate-900/75 dark:text-slate-700/90 h-2 w-full left-0 top-full"
+          className="absolute left-0 w-full h-2 text-slate-900/75 dark:text-slate-700/90 top-full"
           x="0px"
           y="0px"
           viewBox="0 0 255 255"

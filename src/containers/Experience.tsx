@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <motion.section
       id="experience"
-      className="py-32 max-w-2xl mx-auto"
+      className="max-w-2xl py-32 mx-auto"
       {...getSectionAnimation}
     >
       <h2 className="heading-secondary">{experienceSection.title}</h2>

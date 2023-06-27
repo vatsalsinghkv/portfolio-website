@@ -19,18 +19,18 @@ const Hero = () => {
   return (
     <Wrapper
       id="hero"
-      className="min-h-screen h-full flex flex-col justify-center gap-6 xs:gap-7 mt-12 xs:mt-0"
+      className="flex flex-col justify-center h-full min-h-screen gap-6 mt-12 xs:gap-7 xs:mt-0"
     >
       <motion.p
         variants={slideUp({ delay: getAnimationDelay(0) })}
         initial="hidden"
         animate="show"
-        className="text-sm md:text-base text-accent font-mono"
+        className="font-mono text-sm md:text-base text-accent"
       >
         {subtitle}
       </motion.p>
 
-      <div className="text-4xl md:text-7xl font-bold tracking-tighter max-w-5xl">
+      <div className="max-w-5xl text-4xl font-bold tracking-tighter md:text-7xl">
         <motion.h1
           variants={slideUp({ delay: getAnimationDelay(1) })}
           initial="hidden"
@@ -62,7 +62,7 @@ const Hero = () => {
         variants={slideUp({ delay: getAnimationDelay(4) })}
         initial="hidden"
         animate="show"
-        className="text-xs md:text-sm font-mono text-accent"
+        className="font-mono text-xs md:text-sm text-accent"
       >
         {specialText}
       </motion.p>
