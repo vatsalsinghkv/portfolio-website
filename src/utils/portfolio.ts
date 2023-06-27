@@ -197,7 +197,7 @@ export const experienceSection: ExperienceSectionType = {
   title: "where i've worked",
   experiences: [
     {
-      company: 'SHMTH Capitals',
+      company: 'SHMTH Capital',
       companyUrl: 'https://www.linkedin.com/company/shmth-capital/about/',
       role: 'frontend developer intern',
       started: 'april 2023',
