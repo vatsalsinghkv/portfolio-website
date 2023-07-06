@@ -1,0 +1,65 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "next",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "simple-import-sort", "unused-imports"],
+  "rules": {
+    "@next/next/no-img-element": "error",
+    "@next/next/no-async-client-component": "error",
+    "@next/next/no-html-link-for-pages": "error",
+    "no-unused-vars": "off",
+    "no-console": "warn",
+    "@typescript-eslint/no-empty-function": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/no-unescaped-entities": "off",
+    "react/display-name": "off",
+    "react/jsx-curly-brace-presence": [
+      "warn",
+      { "props": "never", "children": "never" }
+    ],
+    "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "warn",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "simple-import-sort/exports": "warn",
+    "simple-import-sort/imports": [
+      "warn",
+      {
+        "groups": [
+          ["^@?\\\\w", "^\\\\u0000"],
+          ["^.+\\\\.s?css$"],
+          ["^@/lib", "^@/hooks"],
+          ["^@/data"],
+          ["^@/components", "^@/container"],
+          ["^@/store"],
+          ["^@/"],
+          [
+            "^\\\\./?$",
+            "^\\\\.(?!/?$)",
+            "^\\\\.\\\\./?$",
+            "^\\\\.\\\\.(?!/?$)",
+            "^\\\\.\\\\./\\\\.\\\\./?$",
+            "^\\\\.\\\\./\\\\.\\\\.(?!/?$)",
+            "^\\\\.\\\\./\\\\.\\\\./\\\\.\\\\./?$",
+            "^\\\\.\\\\./\\\\.\\\\./\\\\.\\\\.(?!/?$)"
+          ],
+          ["^@/types"],
+          ["^"]
+        ]
+      }
+    ]
+  }
+}
