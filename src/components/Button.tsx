@@ -1,11 +1,10 @@
-import Link from 'next/link';
-import { motion, MotionProps } from 'framer-motion';
 import { removeKeys } from '../utils/helper';
+import { motion, MotionProps } from 'framer-motion';
+import Link from 'next/link';
 
 interface DefaultProps {
   children: React.ReactNode | string;
   className?: string;
-  variant?: 'solid' | 'outlined';
   size?: 'lg' | 'sm';
   center?: boolean;
 }
@@ -33,7 +32,6 @@ const buttonProps: Array<keyof Props | keyof LinkProps> = [
   'children',
   'className',
   'size',
-  'variant',
   'type',
   'href',
 ];
@@ -43,10 +41,8 @@ const Button = (props: Props & MotionProps) => {
     className,
     children,
     type = 'button',
-    variant = 'solid',
     size = 'sm',
     center = false,
-    ...rest
   } = props;
 
   const classes = `${

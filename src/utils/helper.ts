@@ -1,5 +1,5 @@
-import { BreakpointType, ProjectType } from '../types';
 import tailwindConfig from '../../tailwind.config';
+import { BreakpointType, ProjectType } from '../types';
 import resolveConfig from 'tailwindcss/resolveConfig';
 
 const fullConfig = resolveConfig(tailwindConfig);

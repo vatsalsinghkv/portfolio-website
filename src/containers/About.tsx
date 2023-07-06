@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { HeroImage, ListItem, Wrapper, Link } from '../components';
 import { getSectionAnimation } from '../animations';
-import { aboutSection, author } from '../utils/portfolio';
+import { HeroImage, Link,ListItem, Wrapper } from '../components';
 import { getId } from '../utils/helper';
+import { aboutSection, author } from '../utils/portfolio';
+import { useEffect, useState } from 'react';
 
 const About = () => {
   const { title, img, list } = aboutSection;

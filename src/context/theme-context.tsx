@@ -3,7 +3,7 @@ import { createContext, useCallback, useEffect, useState } from 'react';
 const initialState = {
   isDark: false,
   toggleTheme: () => {},
-  setIsDarkMode: (theme: boolean) => {},
+  setIsDarkMode: (_: boolean) => {},
 };
 
 const ThemeContext = createContext(initialState);
@@ -58,4 +58,4 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export { ThemeProvider, ThemeContext as default };
+export { ThemeContext as default, ThemeProvider };

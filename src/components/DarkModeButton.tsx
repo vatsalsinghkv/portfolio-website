@@ -1,7 +1,7 @@
-import { Icon } from '@iconify/react';
-import { useContext } from 'react';
-import { motion, MotionProps } from 'framer-motion';
 import themeContext from '../context/theme-context';
+import { Icon } from '@iconify/react';
+import { motion, MotionProps } from 'framer-motion';
+import { useContext } from 'react';
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;

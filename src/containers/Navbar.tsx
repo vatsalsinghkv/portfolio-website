@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { Button, DarkModeButton, Link, NavButton } from '../components';
 import { fadeIn, slideIn } from '../animations';
-import { author, navbarSection } from '../utils/portfolio';
-import { getBreakpointsWidth, getId } from '../utils/helper';
+import { Button, DarkModeButton, Link, NavButton } from '../components';
 import useWindowWidth from '../hooks/use-window-width';
+import { getBreakpointsWidth } from '../utils/helper';
+import { author, navbarSection } from '../utils/portfolio';
+import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 /**
  * Hides the navbar while scrolling down
@@ -29,7 +29,7 @@ const hideNavWhileScrolling = ({
 
   window.onscroll = () => {
     if (when) {
-      let curScrollPos = window.pageYOffset;
+      const curScrollPos = window.pageYOffset;
       if (prevScrollPos < curScrollPos) nav.style.top = `-${offset}px`;
       else nav.style.top = '0';
       prevScrollPos = curScrollPos;
@@ -86,10 +86,10 @@ const Navbar = () => {
       className="fixed inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 backdrop-blur-lg"
     >
       <h1 className="relative text-2xl capitalize font-signature text-accent group top-1">
-        <a href="/#hero" className="block">
+        <Link href="/#hero" className="block">
           {author.name}
           <div className="absolute bottom-1.5 left-0 h-[1px] w-0 group-hover:w-full bg-accent duration-300"></div>
-        </a>
+        </Link>
       </h1>
 
       <NavButton
@@ -101,12 +101,8 @@ const Navbar = () => {
       />
 
       {(navbarCollapsed || windowWidth > md) && (
-        <nav
-          className={`capitalize absolute text-sm duration-200 md:bg-transparent z-50 w-[90%] left-1/2 -translate-x-1/2 top-full h-max rounded-xl shadow-xl p-6 bg-bg-secondary md:blocks md:static md:w-auto md:left-auto md:transform-none md:top-auto md:rounded-none md:shadow-none md:p-0 md:h-auto`}
-        >
-          <ul
-            className={`list-style-none flex flex-col gap-3 lg:gap-5 xl:gap-6 md:flex-row items-stretch md:items-center`}
-          >
+        <nav className="capitalize absolute text-sm duration-200 md:bg-transparent z-50 w-[90%] left-1/2 -translate-x-1/2 top-full h-max rounded-xl shadow-xl p-6 bg-bg-secondary md:blocks md:static md:w-auto md:left-auto md:transform-none md:top-auto md:rounded-none md:shadow-none md:p-0 md:h-auto">
+          <ul className="flex flex-col items-stretch gap-3 list-style-none lg:gap-5 xl:gap-6 md:flex-row md:items-center">
             {navLinks.map(({ name, url }, i) => (
               <NavItem
                 key={i}

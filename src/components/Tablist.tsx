@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import Link from './Link';
-import ListItem from './ListItem';
 import useWindowWidth from '../hooks/use-window-width';
 import { ExperienceType } from '../types';
 import { getBreakpointsWidth, getId } from '../utils/helper';
+import Link from './Link';
+import ListItem from './ListItem';
+import { useState } from 'react';
 
 type Props = {
   experiences: ExperienceType[];
@@ -46,7 +46,7 @@ const Tablist = ({ experiences }: Props) => {
         <div className="absolute h-0.5 w-full sm:w-0.5 sm:h-full rounded-full bottom-0 sm:inset-0 left-0 bg-dark-3"></div>
         <div
           style={sliderStyle}
-          className={`absolute h-0.5 w-[120px] sm:w-0.5 sm:h-10 rounded-full bg-accent bottom-0 left-0 sm:inset-0 transition-all duration-250 delay-100 in-scroll`}
+          className="absolute h-0.5 w-[120px] sm:w-0.5 sm:h-10 rounded-full bg-accent bottom-0 left-0 sm:inset-0 transition-all duration-250 delay-100 in-scroll"
         ></div>
       </div>
 

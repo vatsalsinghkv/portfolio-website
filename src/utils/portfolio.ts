@@ -1,3 +1,4 @@
+import { StringKeyValueType } from '../types';
 import {
   AboutSectionType,
   ContactSectionType,
@@ -9,7 +10,6 @@ import {
   SkillsSectionType,
   SocialSectionType,
 } from '../types/sections';
-import { StringKeyValueType } from '../types';
 import { resumeFileName } from './config';
 import { getId } from './helper';
 

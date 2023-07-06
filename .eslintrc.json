@@ -9,7 +9,6 @@
   "plugins": ["@typescript-eslint", "simple-import-sort", "unused-imports"],
   "rules": {
     "@next/next/no-img-element": "error",
-    "@next/next/no-async-client-component": "error",
     "@next/next/no-html-link-for-pages": "error",
     "no-unused-vars": "off",
     "no-console": "warn",

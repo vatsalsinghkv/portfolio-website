@@ -1,8 +1,8 @@
-import { useContext } from 'react';
-import themeContext from '../context/theme-context';
-import { Skill, Wrapper } from '../components';
 import { getSectionAnimation } from '../animations';
+import { Skill, Wrapper } from '../components';
+import themeContext from '../context/theme-context';
 import { skillsSection } from '../utils/portfolio';
+import { useContext } from 'react';
 
 const Skills = () => {
   const { title, skills } = skillsSection;

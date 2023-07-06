@@ -1,5 +1,5 @@
-import { Button, Wrapper } from '../components';
 import { getSectionAnimation } from '../animations';
+import { Button, Wrapper } from '../components';
 import { contactSection } from '../utils/portfolio';
 
 const Contact = () => {

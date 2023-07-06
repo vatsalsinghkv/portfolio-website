@@ -1,15 +1,15 @@
-import type { NextPage } from 'next';
 import { SEO } from '../components';
 import {
   About,
+  Contact,
   Experience,
   Hero,
-  Skills,
-  Contact,
-  Projects,
   Layout,
+  Projects,
+  Skills,
 } from '../containers';
 import { seoData } from '../utils/portfolio';
+import type { NextPage } from 'next';
 
 /**
  * TODO: Create separate page for all the projects with filters (vercel | netlify | github api for automation)

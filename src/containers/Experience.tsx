@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
-import { Tablist } from '../components';
 import { getSectionAnimation } from '../animations';
+import { Tablist } from '../components';
 import { experienceSection } from '../utils/portfolio';
+import { motion } from 'framer-motion';
 
 const Experience = () => {
   return (

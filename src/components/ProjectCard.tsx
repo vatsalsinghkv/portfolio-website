@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import { Icon } from '@iconify/react';
-import { motion, MotionProps } from 'framer-motion';
-import { useEffect, useState } from 'react';
 import { ProjectType } from '../types';
 import { blurImageURL } from '../utils/config';
+import { Icon } from '@iconify/react';
+import { motion, MotionProps } from 'framer-motion';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const ProjectCard = ({
   name,

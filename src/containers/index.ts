@@ -1,27 +1,27 @@
-import Navbar from './Navbar';
-import Hero from './Hero';
 import About from './About';
+import Contact from './Contact';
+import Email from './Email';
+import Experience from './Experience';
+import Footer from './Footer';
+import Hero from './Hero';
+import Layout from './Layout';
+import Navbar from './Navbar';
+import Projects from './Projects';
 import Skills from './Skills';
 import Social from './Social';
-import Email from './Email';
-import Contact from './Contact';
-import Footer from './Footer';
-import Experience from './Experience';
 import SocialLinks from './SocialLinks';
-import Projects from './Projects';
-import Layout from './Layout';
 
 export {
-  Navbar,
-  Hero,
   About,
-  Skills,
-  Social,
+  Contact,
   Email,
   Experience,
-  Contact,
   Footer,
-  SocialLinks,
-  Projects,
+  Hero,
   Layout,
+  Navbar,
+  Projects,
+  Skills,
+  Social,
+  SocialLinks,
 };

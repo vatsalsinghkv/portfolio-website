@@ -1,5 +1,5 @@
-import { ReactNode, HTMLAttributes, ElementType } from 'react';
 import { motion, MotionProps } from 'framer-motion';
+import { ElementType,HTMLAttributes, ReactNode } from 'react';
 
 interface Props extends HTMLAttributes<HTMLElement> {
   as?: ElementType;

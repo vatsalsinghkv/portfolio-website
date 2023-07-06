@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react';
 import { SocialLinkType } from '../types';
 import SocialLink from './SocialLink';
+import { Icon } from '@iconify/react';
 
 const SocialIcon = ({ icon, url }: SocialLinkType) => {
   return (

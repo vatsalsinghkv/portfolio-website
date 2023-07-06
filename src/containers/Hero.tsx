@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion';
+import { slideUp } from '../animations';
 import { Button, Wrapper } from '../components';
 import useWindowWidth from '../hooks/use-window-width';
 import { getBreakpointsWidth } from '../utils/helper';
 import { heroSection } from '../utils/portfolio';
-import { slideUp } from '../animations';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   const { cta, subtitle, title, tagline, description, specialText } =

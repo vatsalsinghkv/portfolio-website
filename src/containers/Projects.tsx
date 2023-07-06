@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { getSectionAnimation, projectVariants } from '../animations';
 import { Button, ProjectCard, Wrapper } from '../components';
 import { PROJECTS_INITIALLY } from '../utils/config';
 import { sortByYear } from '../utils/helper';
 import { projectsSection } from '../utils/portfolio';
-import { getSectionAnimation, projectVariants } from '../animations';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const Projects = () => {
   const { projects, title } = projectsSection;
