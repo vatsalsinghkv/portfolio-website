@@ -1,5 +1,11 @@
+import Link from 'next/link';
 import { fadeIn, slideIn } from '../animations';
-import { Button, DarkModeButton, Link, NavButton } from '../components';
+import {
+  Button,
+  DarkModeButton,
+  Link as CLink,
+  NavButton,
+} from '../components';
 import useWindowWidth from '../hooks/use-window-width';
 import { getBreakpointsWidth } from '../utils/helper';
 import { author, navbarSection } from '../utils/portfolio';
@@ -53,14 +59,14 @@ const NavItem = ({ href, children, onClick, index, delay }: NavItemsProps) => {
       initial="hidden"
       animate="show"
     >
-      <Link
+      <CLink
         href={href || `/#${children}`}
         className="block p-2 duration-500 hover:text-accent"
         onClick={onClick}
         withPadding
       >
         {children}
-      </Link>
+      </CLink>
     </motion.li>
   );
 };
