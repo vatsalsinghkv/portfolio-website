@@ -242,6 +242,15 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'image animations',
+      url: 'https://image-animations.vercel.app/',
+      repo: 'https://github.com/vatsalsinghkv/image-animations',
+      img: 'https://github-production-user-asset-6210df.s3.amazonaws.com/68834718/252267106-857c5341-1106-4e84-b7e6-80a668a20ba8.png',
+      year: 2023,
+      tags: ['CSS Animations', 'Sass'],
+    },
+    {
+      id: getId(),
       name: 'fylo landing page',
       url: 'https://fylo-kv.netlify.app/',
       repo: 'https://github.com/vatsalsinghkv/fylo',
