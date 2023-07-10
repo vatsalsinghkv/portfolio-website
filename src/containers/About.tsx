@@ -1,5 +1,5 @@
 import { getSectionAnimation } from '../animations';
-import { HeroImage, Link,ListItem, Wrapper } from '../components';
+import { HeroImage, Link, ListItem, Wrapper } from '../components';
 import { getId } from '../utils/helper';
 import { aboutSection, author } from '../utils/portfolio';
 import { useEffect, useState } from 'react';

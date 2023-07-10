@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { fadeIn, slideIn } from '../animations';
 import {
   Button,
@@ -10,6 +9,7 @@ import useWindowWidth from '../hooks/use-window-width';
 import { getBreakpointsWidth } from '../utils/helper';
 import { author, navbarSection } from '../utils/portfolio';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 /**
