@@ -73,7 +73,7 @@
 
 ## Continuous Development
 
-- [x] Add animation with framer-motion
+- [ ] Find alternative for framer motion
 - [ ] Add Content Management System (CMS)
 - [ ] Add test cases
 - [ ] Separate route (archive) for all the projects with filters
