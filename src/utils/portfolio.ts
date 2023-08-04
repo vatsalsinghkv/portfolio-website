@@ -83,7 +83,7 @@ export const heroSection: HeroSectionType = {
     "I'm a passionate Front-End web developer having an experience of web applications with React.js & Next.js with TypeScript & TailwindCSS and UI/UX designing.",
   // description:
   //   "I'm a passionate Full Stack web developer having an experience of web  applications with React.js, Next.js and Blockchain development on Ethereum, Solidity and Web3.js.",
-  specialText: 'Currently available for remote job & freelance',
+  specialText: 'Currently available for a job & freelance',
   // either button or simple text (information)
   cta: {
     title: 'see my resume',
@@ -197,6 +197,18 @@ export const experienceSection: ExperienceSectionType = {
   title: "where i've worked",
   experiences: [
     {
+      company: 'Pixelwand',
+      companyUrl: 'https://www.pixelwand.live/',
+      role: 'frontend developer',
+      started: 'july 2023',
+      upto: 'present',
+      tasks: [
+        'Migrated the codebase from React and Bootstrap to Next.js and TailwindCSS.',
+        'Implemented authentication with NextAuth for a SaaS Product.',
+        'Designed and built components like sidebar with multi-level links & drop-downs and detailed page.',
+      ],
+    },
+    {
       company: 'SHMTH Capital',
       companyUrl: 'https://www.linkedin.com/company/shmth-capital/about/',
       role: 'frontend developer intern',
@@ -219,17 +231,6 @@ export const experienceSection: ExperienceSectionType = {
         'Architected the folder structure and initial setup of the app.',
         'Reviewed and approved multiple Pull requests.',
         'Worked remotely with a distributed team from around the globe, collaborating closely using screen-sharing.',
-      ],
-    },
-    {
-      company: 'Kronos',
-      companyUrl: 'https://kronos-sscbs-21.github.io/proj-kronos-site/',
-      role: 'designer & developer',
-      started: 'january 2021',
-      upto: 'june 2021',
-      tasks: [
-        'Designed social media posts.',
-        'Worked remotely with designing & tech team.',
       ],
     },
   ],
