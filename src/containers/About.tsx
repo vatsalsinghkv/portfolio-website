@@ -26,17 +26,17 @@ const About = () => {
             Fast-forward to today, and I’ve had the privilege of working at a
             start-up -{' '}
             <Link
-              href="https://webnetic.vercel.app/"
+              href="https://www.pixelwand.live/"
               target="_blank"
               className="text-accent"
             >
-              Webnetics
+              Pixelwand
             </Link>
             .
           </p>
           <p>
             My main focus these days is learning mobile development and finding
-            a decent remote job.
+            a decent job.
           </p>
 
           {list && (
