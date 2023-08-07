@@ -243,6 +243,15 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'easy fix',
+      url: 'https://easy-fix.vercel.app/',
+      repo: 'https://github.com/vatsalsinghkv/easy-fix',
+      img: 'https://user-images.githubusercontent.com/68834718/258852895-df5c6da7-a698-40fb-97c3-a5474314cb85.png',
+      year: 2023,
+      tags: ['React', 'Tailwind'],
+    },
+    {
+      id: getId(),
       name: 'image animations',
       url: 'https://image-animations.vercel.app/',
       repo: 'https://github.com/vatsalsinghkv/image-animations',
@@ -250,15 +259,15 @@ export const projectsSection: ProjectsSectionType = {
       year: 2023,
       tags: ['CSS Animations', 'Sass'],
     },
-    {
-      id: getId(),
-      name: 'fylo landing page',
-      url: 'https://fylo-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/fylo',
-      img: 'https://user-images.githubusercontent.com/68834718/212843973-ef864a5a-f393-4901-b422-6f775a043cdb.png',
-      year: 2023,
-      tags: ['Html', 'Tailwind', 'TS'],
-    },
+    // {
+    //   id: getId(),
+    //   name: 'fylo landing page',
+    //   url: 'https://fylo-kv.netlify.app/',
+    //   repo: 'https://github.com/vatsalsinghkv/fylo',
+    //   img: 'https://user-images.githubusercontent.com/68834718/212843973-ef864a5a-f393-4901-b422-6f775a043cdb.png',
+    //   year: 2023,
+    //   tags: ['Html', 'Tailwind', 'TS'],
+    // },
     {
       id: getId(),
       name: 'remotive jobs',
