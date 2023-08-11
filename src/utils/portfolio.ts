@@ -210,7 +210,7 @@ export const experienceSection: ExperienceSectionType = {
     },
     {
       company: 'SHMTH Capital',
-      companyUrl: 'https://www.linkedin.com/company/shmth-capital/about/',
+      companyUrl: 'https://shmth.capital/',
       role: 'frontend developer intern',
       started: 'april 2023',
       upto: 'july 2023',
