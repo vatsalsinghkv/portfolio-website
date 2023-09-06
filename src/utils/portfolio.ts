@@ -340,14 +340,15 @@ export const projectsSection: ProjectsSectionType = {
       year: 2021,
       tags: ['html', 'sass', 'JS'],
     },
-    // {
-    //   name: 'nexter',
-    //   url: 'https://vatsalsinghkv.github.io/nexter/',
-    //   repo: 'https://github.com/vatsalsinghkv/nexter',
-    //   img: 'https://user-images.githubusercontent.com/68834718/210224671-5501c5d9-a8d2-4044-a14c-38fb7e46a113.png',
-    //   year: 2021,
-    //   tags: ['html', 'sass'],
-    // },
+    {
+      id: getId(),
+      name: 'nexter',
+      url: 'https://vatsalsinghkv.github.io/nexter/',
+      repo: 'https://github.com/vatsalsinghkv/nexter',
+      img: 'https://user-images.githubusercontent.com/68834718/210224671-5501c5d9-a8d2-4044-a14c-38fb7e46a113.png',
+      year: 2021,
+      tags: ['html', 'sass'],
+    },
     {
       id: getId(),
       name: 'IP address tracker',
@@ -384,15 +385,15 @@ export const projectsSection: ProjectsSectionType = {
       year: 2021,
       tags: ['html', 'CSS', 'JS'],
     },
-    {
-      id: getId(),
-      name: 'digital clock',
-      url: 'https://vatsalsinghkv.github.io/digital-clock/',
-      repo: 'https://github.com/vatsalsinghkv/digital-clock',
-      img: 'https://user-images.githubusercontent.com/68834718/210226274-a453ba15-9b83-4577-a84d-e4b88e0a5605.png',
-      year: 2021,
-      tags: ['html', 'CSS', 'JS'],
-    },
+    // {
+    //   id: getId(),
+    //   name: 'digital clock',
+    //   url: 'https://vatsalsinghkv.github.io/digital-clock/',
+    //   repo: 'https://github.com/vatsalsinghkv/digital-clock',
+    //   img: 'https://user-images.githubusercontent.com/68834718/210226274-a453ba15-9b83-4577-a84d-e4b88e0a5605.png',
+    //   year: 2021,
+    //   tags: ['html', 'CSS', 'JS'],
+    // },
   ],
 };
 
