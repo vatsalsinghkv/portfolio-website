@@ -94,6 +94,7 @@
 
 - [https://developer-portfolio-1hanzla100.vercel.app/](https://developer-portfolio-1hanzla100.vercel.app/) - Design Inspiration
 - [https://brittanychiang.com/](https://brittanychiang.com/) - Design Inspiration
+- [https://dev.to/andrewchmr/awesome-animated-cursor-with-react-hooks-5ec3](https://dev.to/andrewchmr/awesome-animated-cursor-with-react-hooks-5ec3) - Cursor Animation Inspiration
 
 ## Show Your Support
 

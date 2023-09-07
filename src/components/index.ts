@@ -1,4 +1,5 @@
 import Button from './Button';
+import Cursor from './Cursor';
 import DarkModeButton from './DarkModeButton';
 import HeroImage from './HeroImage';
 import Link from './Link';
@@ -17,6 +18,7 @@ import Wrapper from './Wrapper';
 
 export {
   Button,
+  Cursor,
   DarkModeButton,
   HeroImage,
   Link,
