@@ -1,7 +1,6 @@
-import themeContext from '../context/theme-context';
+import { useTheme } from '../hooks/use-theme';
 import { Icon } from '@iconify/react';
 import { motion, MotionProps } from 'framer-motion';
-import { useContext } from 'react';
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
@@ -12,11 +11,11 @@ const DarkModeButton = ({
   onClick,
   ...rest
 }: Props & MotionProps) => {
-  const { isDark, toggleTheme } = useContext(themeContext);
+  const { isDarkMode, toggle } = useTheme();
 
   const clickHandler = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     onClick && onClick(e);
-    toggleTheme();
+    toggle();
   };
 
   return (
@@ -25,7 +24,11 @@ const DarkModeButton = ({
       onClick={clickHandler}
       {...rest}
     >
-      <Icon icon={isDark ? 'carbon:sun' : 'ph:moon'} width="26" height="26" />
+      <Icon
+        icon={isDarkMode ? 'carbon:sun' : 'ph:moon'}
+        width="26"
+        height="26"
+      />
     </motion.button>
   );
 };

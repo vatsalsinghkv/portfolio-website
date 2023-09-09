@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import { Cursor } from '../components';
-import { ThemeProvider } from '../context/theme-context';
+import ThemeProvider from '../hooks/use-theme';
 import type { AppProps } from 'next/app';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
