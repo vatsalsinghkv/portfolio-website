@@ -28,7 +28,7 @@ export default function ThemeProvider({
 }) {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(
     typeof window !== 'undefined' &&
-      JSON.parse(localStorage.getItem('darkMode') || '')
+      JSON.parse(localStorage.getItem('darkMode') || 'true')
       ? true
       : false
   );
