@@ -29,6 +29,10 @@ module.exports = {
         'auto-300': 'repeat(auto-fill, minmax(300px, 1fr))',
         'auto-250': 'repeat(auto-fill, minmax(250px, 1fr))',
       },
+      backgroundImage: {
+        torch:
+          'radial-gradient(525px at 50% 50%, var(--color-accent-torch), transparent 80%)',
+      },
     },
   },
   plugins: [],
