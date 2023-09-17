@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 type Props = { src: string; alt: string };
 
-const HeroImage = ({ src, alt }: Props) => {
+const AuthorImage = ({ src, alt }: Props) => {
   return (
     <div className="relative w-64 h-64 group sm:w-auto sm:h-auto">
       <Image
@@ -17,4 +17,4 @@ const HeroImage = ({ src, alt }: Props) => {
   );
 };
 
-export default HeroImage;
+export default AuthorImage;

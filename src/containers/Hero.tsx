@@ -1,8 +1,11 @@
-import { slideUp } from '../animations';
-import { Button, Wrapper } from '../components';
-import useWindowWidth from '../hooks/use-window-width';
-import { getBreakpointsWidth } from '../utils/helper';
-import { heroSection } from '../utils/portfolio';
+import useWindowWidth from '@/hooks/use-window-width';
+
+import { Button, Wrapper } from '@/components';
+
+import { slideUp } from '@/animations';
+import { getBreakpointsWidth } from '@/utils/helper';
+import { heroSection } from '@/utils/portfolio';
+
 import { motion } from 'framer-motion';
 
 const Hero = () => {

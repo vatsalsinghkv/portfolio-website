@@ -1,4 +1,5 @@
-import { fadeIn } from '../animations';
+import { fadeIn } from '@/animations';
+
 import { motion } from 'framer-motion';
 import React from 'react';
 

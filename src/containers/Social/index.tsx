@@ -1,4 +1,5 @@
-import { Sidebar } from '../components';
+import { Sidebar } from '@/components';
+
 import SocialLinks from './SocialLinks';
 
 const Social = () => {

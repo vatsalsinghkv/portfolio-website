@@ -1,4 +1,5 @@
-import { useTheme } from '../hooks/use-theme';
+import { useTheme } from '@/hooks/use-theme';
+
 import { Icon } from '@iconify/react';
 import { motion, MotionProps } from 'framer-motion';
 

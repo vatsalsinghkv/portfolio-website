@@ -1,4 +1,4 @@
-import { SEO } from '../components';
+import { SEO } from '@/components';
 import {
   About,
   Contact,
@@ -7,8 +7,10 @@ import {
   Layout,
   Projects,
   Skills,
-} from '../containers';
-import { seoData } from '../utils/portfolio';
+} from '@/containers';
+
+import { seoData } from '@/utils/portfolio';
+
 import type { NextPage } from 'next';
 
 /**

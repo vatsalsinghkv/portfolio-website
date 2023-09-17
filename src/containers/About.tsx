@@ -1,7 +1,9 @@
-import { getSectionAnimation } from '../animations';
-import { HeroImage, Link, ListItem, Wrapper } from '../components';
-import { getId } from '../utils/helper';
-import { aboutSection, author } from '../utils/portfolio';
+import { AuthorImage, Link, ListItem, Wrapper } from '@/components';
+
+import { getSectionAnimation } from '@/animations';
+import { getId } from '@/utils/helper';
+import { aboutSection, author } from '@/utils/portfolio';
+
 import { useEffect, useState } from 'react';
 
 const About = () => {
@@ -50,7 +52,7 @@ const About = () => {
             </>
           )}
         </div>
-        <HeroImage src={img} alt={author.name} />
+        <AuthorImage src={img} alt={author.name} />
       </main>
     </Wrapper>
   ) : (

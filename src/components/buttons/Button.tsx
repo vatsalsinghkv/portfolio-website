@@ -1,4 +1,5 @@
-import { removeKeys } from '../utils/helper';
+import { removeKeys } from '@/utils/helper';
+
 import { motion, MotionProps } from 'framer-motion';
 import Link from 'next/link';
 

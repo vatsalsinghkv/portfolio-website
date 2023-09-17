@@ -1,8 +1,10 @@
-import { getSectionAnimation, projectVariants } from '../animations';
-import { Button, ProjectCard, Wrapper } from '../components';
-import { PROJECTS_INITIALLY } from '../utils/config';
-import { sortByYear } from '../utils/helper';
-import { projectsSection } from '../utils/portfolio';
+import { Button, ProjectCard, Wrapper } from '@/components';
+
+import { getSectionAnimation, projectVariants } from '@/animations';
+import { PROJECTS_INITIALLY } from '@/utils/config';
+import { sortByYear } from '@/utils/helper';
+import { projectsSection } from '@/utils/portfolio';
+
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 

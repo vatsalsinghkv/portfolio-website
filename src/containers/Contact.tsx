@@ -1,6 +1,7 @@
-import { getSectionAnimation } from '../animations';
-import { Button, Wrapper } from '../components';
-import { contactSection } from '../utils/portfolio';
+import { Button, Wrapper } from '@/components';
+
+import { getSectionAnimation } from '@/animations';
+import { contactSection } from '@/utils/portfolio';
 
 const Contact = () => {
   const { subtitle, title, paragraphs, link } = contactSection;

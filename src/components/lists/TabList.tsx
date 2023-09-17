@@ -1,15 +1,18 @@
-import useWindowWidth from '../hooks/use-window-width';
-import { ExperienceType } from '../types';
-import { getBreakpointsWidth, getId } from '../utils/helper';
-import Link from './Link';
-import ListItem from './ListItem';
+import useWindowWidth from '@/hooks/use-window-width';
+
+import { Link, ListItem } from '@/components';
+
+import { getBreakpointsWidth, getId } from '@/utils/helper';
+
+import { ExperienceType } from '@/types';
+
 import { useState } from 'react';
 
 type Props = {
   experiences: ExperienceType[];
 };
 
-const Tablist = ({ experiences }: Props) => {
+const TabList = ({ experiences }: Props) => {
   const [activeExperience, setActiveExperience] = useState(0);
   const windowWidth = useWindowWidth();
 
@@ -75,4 +78,4 @@ const Tablist = ({ experiences }: Props) => {
   );
 };
 
-export default Tablist;
+export default TabList;

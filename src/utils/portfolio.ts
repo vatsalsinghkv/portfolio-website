@@ -1,4 +1,5 @@
-import { StringKeyValueType } from '../types';
+import { StringKeyValueType } from '@/types';
+
 import {
   AboutSectionType,
   ContactSectionType,

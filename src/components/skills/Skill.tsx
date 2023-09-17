@@ -1,6 +1,9 @@
-import { SoftwareSkillType } from '../types';
-import { getId } from '../utils/helper';
-import { ListItem, ShowLottie, SkillIcon } from '.';
+import { ListItem, ShowLottie, SkillIcon } from '@/components';
+
+import { getId } from '@/utils/helper';
+
+import { SoftwareSkillType } from '@/types';
+
 import { motion, MotionProps } from 'framer-motion';
 
 type Props = {

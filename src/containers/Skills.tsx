@@ -1,7 +1,9 @@
-import { getSectionAnimation } from '../animations';
-import { Skill, Wrapper } from '../components';
-import { useTheme } from '../hooks/use-theme';
-import { skillsSection } from '../utils/portfolio';
+import { useTheme } from '@/hooks/use-theme';
+
+import { Skill, Wrapper } from '@/components';
+
+import { getSectionAnimation } from '@/animations';
+import { skillsSection } from '@/utils/portfolio';
 
 const Skills = () => {
   const { title, skills } = skillsSection;
