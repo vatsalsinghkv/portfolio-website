@@ -105,7 +105,7 @@ export const aboutSection: AboutSectionType = {
       'NextJs',
       'TailwindCSS',
       'ExpressJs',
-      'Solidity',
+      'Unit Testing',
       'TypeScript',
       'CSS Animations',
     ],
