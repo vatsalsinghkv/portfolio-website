@@ -1,4 +1,4 @@
-import { SocialLinkType } from '@/types';
+import { SocialLinkType } from '@/lib/types';
 
 import SocialLink from './SocialLink';
 import { Icon } from '@iconify/react';

@@ -1,7 +1,7 @@
 import { TabList } from '@/components';
 
-import { getSectionAnimation } from '../animations';
-import { experienceSection } from '../utils/portfolio';
+import { experienceSection } from '../lib/utils/portfolio';
+import { getSectionAnimation } from '../styles/animations';
 import { motion } from 'framer-motion';
 
 const Experience = () => {

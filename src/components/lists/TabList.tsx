@@ -1,10 +1,8 @@
-import useWindowWidth from '@/hooks/use-window-width';
+import useWindowWidth from '@/lib/hooks/use-window-width';
+import { ExperienceType } from '@/lib/types';
+import { getBreakpointsWidth, getId } from '@/lib/utils/helper';
 
 import { Link, ListItem } from '@/components';
-
-import { getBreakpointsWidth, getId } from '@/utils/helper';
-
-import { ExperienceType } from '@/types';
 
 import { useState } from 'react';
 

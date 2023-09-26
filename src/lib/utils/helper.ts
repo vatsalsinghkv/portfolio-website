@@ -1,4 +1,4 @@
-import tailwindConfig from '../../tailwind.config';
+import tailwindConfig from '../../../tailwind.config';
 import { BreakpointType, ProjectType } from '../types';
 import resolveConfig from 'tailwindcss/resolveConfig';
 

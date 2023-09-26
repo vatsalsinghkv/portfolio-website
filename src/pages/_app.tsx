@@ -1,4 +1,4 @@
-import ThemeProvider from '@/hooks/use-theme';
+import ThemeProvider from '@/lib/hooks/use-theme';
 
 import { Cursor } from '@/components';
 

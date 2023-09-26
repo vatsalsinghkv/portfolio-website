@@ -1,10 +1,10 @@
-import useWindowWidth from '@/hooks/use-window-width';
+import useWindowWidth from '@/lib/hooks/use-window-width';
+import { getBreakpointsWidth } from '@/lib/utils/helper';
+import { heroSection } from '@/lib/utils/portfolio';
 
 import { Button, Wrapper } from '@/components';
 
-import { slideUp } from '@/animations';
-import { getBreakpointsWidth } from '@/utils/helper';
-import { heroSection } from '@/utils/portfolio';
+import { slideUp } from '@/styles/animations';
 
 import { motion } from 'framer-motion';
 
