@@ -1,4 +1,4 @@
-import { footerSection } from '@/utils/portfolio';
+import { footerSection } from '@/lib/utils/portfolio';
 
 import SocialLinks from '../Social/SocialLinks';
 

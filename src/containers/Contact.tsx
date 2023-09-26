@@ -1,7 +1,8 @@
+import { contactSection } from '@/lib/utils/portfolio';
+
 import { Button, Wrapper } from '@/components';
 
-import { getSectionAnimation } from '@/animations';
-import { contactSection } from '@/utils/portfolio';
+import { getSectionAnimation } from '@/styles/animations';
 
 const Contact = () => {
   const { subtitle, title, paragraphs, link } = contactSection;

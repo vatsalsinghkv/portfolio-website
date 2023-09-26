@@ -1,3 +1,5 @@
+import { seoData } from '@/lib/utils/portfolio';
+
 import { SEO } from '@/components';
 import {
   About,
@@ -8,8 +10,6 @@ import {
   Projects,
   Skills,
 } from '@/containers';
-
-import { seoData } from '@/utils/portfolio';
 
 import type { NextPage } from 'next';
 

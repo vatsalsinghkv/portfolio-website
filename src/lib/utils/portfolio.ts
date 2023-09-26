@@ -1,5 +1,4 @@
-import { StringKeyValueType } from '@/types';
-
+import { StringKeyValueType } from '@/lib/types';
 import {
   AboutSectionType,
   ContactSectionType,
@@ -10,7 +9,8 @@ import {
   ProjectsSectionType,
   SkillsSectionType,
   SocialSectionType,
-} from '../types/sections';
+} from '@/lib/types/sections';
+
 import { resumeFileName } from './config';
 import { getId } from './helper';
 

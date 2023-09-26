@@ -1,10 +1,10 @@
-import useWindowWidth from '@/hooks/use-window-width';
+import useWindowWidth from '@/lib/hooks/use-window-width';
+import { getBreakpointsWidth } from '@/lib/utils/helper';
+import { author, navbarSection } from '@/lib/utils/portfolio';
 
 import { Button, DarkModeButton, Link as CLink, NavButton } from '@/components';
 
-import { fadeIn, slideIn } from '@/animations';
-import { getBreakpointsWidth } from '@/utils/helper';
-import { author, navbarSection } from '@/utils/portfolio';
+import { fadeIn, slideIn } from '@/styles/animations';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
