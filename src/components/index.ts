@@ -12,7 +12,6 @@ import SocialLink from './socials/SocialLink';
 import AuthorImage from './ui/AuthorImage';
 import Cursor from './ui/Cursor';
 import ProjectCard from './ui/ProjectCard';
-import SEO from './ui/SEO';
 import ShowLottie from './ui/ShowLottie';
 import Sidebar from './ui/Sidebar';
 import Wrapper from './ui/Wrapper';
@@ -26,7 +25,6 @@ export {
   ListItem,
   NavButton,
   ProjectCard,
-  SEO,
   ShowLottie,
   Sidebar,
   Skill,
