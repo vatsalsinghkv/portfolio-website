@@ -1,6 +1,3 @@
-import { seoData } from '@/lib/utils/portfolio';
-
-import { SEO } from '@/components';
 import {
   About,
   Contact,
@@ -22,7 +19,6 @@ import type { NextPage } from 'next';
 const Home: NextPage = () => {
   return (
     <>
-      <SEO {...seoData} />
       <Layout>
         <Hero />
         <About />

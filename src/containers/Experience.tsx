@@ -1,3 +1,4 @@
+'use client';
 import { TabList } from '@/components';
 
 import { experienceSection } from '../lib/utils/portfolio';

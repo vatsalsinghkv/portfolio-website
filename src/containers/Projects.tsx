@@ -1,9 +1,11 @@
-import { Button, ProjectCard, Wrapper } from '@/components';
-
-import { getSectionAnimation, projectVariants } from '@/styles/animations';
+'use client';
 import { PROJECTS_INITIALLY } from '@/lib/utils/config';
 import { sortByYear } from '@/lib/utils/helper';
 import { projectsSection } from '@/lib/utils/portfolio';
+
+import { Button, ProjectCard, Wrapper } from '@/components';
+
+import { getSectionAnimation, projectVariants } from '@/styles/animations';
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';

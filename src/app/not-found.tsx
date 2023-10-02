@@ -1,7 +1,7 @@
 import { Button, ShowLottie } from '@/components';
 import { Layout } from '@/containers';
 
-const Custom404 = () => {
+const NotFound = () => {
   return (
     <Layout className="grid h-screen place-items-center">
       <div className="w-full max-w-xl text-center">
@@ -19,4 +19,4 @@ const Custom404 = () => {
   );
 };
 
-export default Custom404;
+export default NotFound;

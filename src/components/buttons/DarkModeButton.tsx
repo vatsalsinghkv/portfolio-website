@@ -1,3 +1,4 @@
+'use client';
 import { useTheme } from '@/lib/hooks/use-theme';
 
 import { Icon } from '@iconify/react';

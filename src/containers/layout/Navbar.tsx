@@ -1,3 +1,4 @@
+'use client';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { getBreakpointsWidth } from '@/lib/utils/helper';
 import { author, navbarSection } from '@/lib/utils/portfolio';

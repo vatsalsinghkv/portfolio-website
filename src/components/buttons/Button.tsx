@@ -1,3 +1,4 @@
+'use client';
 import { removeKeys } from '@/lib/utils/helper';
 
 import { motion, MotionProps } from 'framer-motion';
