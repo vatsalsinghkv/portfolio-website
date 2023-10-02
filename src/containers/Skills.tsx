@@ -1,9 +1,10 @@
+'use client';
 import { useTheme } from '@/lib/hooks/use-theme';
+import { skillsSection } from '@/lib/utils/portfolio';
 
 import { Skill, Wrapper } from '@/components';
 
 import { getSectionAnimation } from '@/styles/animations';
-import { skillsSection } from '@/lib/utils/portfolio';
 
 const Skills = () => {
   const { title, skills } = skillsSection;

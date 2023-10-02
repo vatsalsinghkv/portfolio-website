@@ -1,3 +1,4 @@
+'use client';
 import { getId } from '@/lib/utils/helper';
 import { aboutSection, author } from '@/lib/utils/portfolio';
 

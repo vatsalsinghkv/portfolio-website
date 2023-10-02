@@ -1,3 +1,4 @@
+'use client';
 import { ProjectType } from '@/lib/types';
 import { blurImageURL } from '@/lib/utils/config';
 

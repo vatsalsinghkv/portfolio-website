@@ -1,3 +1,4 @@
+'use client';
 import Button from './buttons/Button';
 import DarkModeButton from './buttons/DarkModeButton';
 import Link from './buttons/Link';

@@ -1,3 +1,4 @@
+'use client';
 type Props = {
   onClick: (event: React.MouseEvent) => void;
   className?: string;

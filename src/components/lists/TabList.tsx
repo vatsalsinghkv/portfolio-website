@@ -1,3 +1,4 @@
+'use client';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { ExperienceType } from '@/lib/types';
 import { getBreakpointsWidth, getId } from '@/lib/utils/helper';

@@ -1,3 +1,4 @@
+'use client';
 import { SoftwareSkillType } from '@/lib/types';
 import { getId } from '@/lib/utils/helper';
 
