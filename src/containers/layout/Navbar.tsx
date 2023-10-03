@@ -1,7 +1,8 @@
 'use client';
+import { author } from '@/lib/content/portfolio';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { getBreakpointsWidth } from '@/lib/utils/helper';
-import { author, navbarSection } from '@/lib/utils/portfolio';
+import { navbarSection } from '@/lib/utils/portfolio';
 
 import { Button, DarkModeButton, Link as CLink, NavButton } from '@/components';
 

@@ -1,4 +1,4 @@
-import { author } from '@/lib/utils/portfolio';
+import { author } from '@/lib/content/portfolio';
 
 import { Sidebar, SocialLink } from '@/components';
 
