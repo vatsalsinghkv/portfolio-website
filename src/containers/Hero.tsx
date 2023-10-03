@@ -1,7 +1,7 @@
 'use client';
+import { heroSection } from '@/lib/content/heroSection';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { getBreakpointsWidth } from '@/lib/utils/helper';
-import { heroSection } from '@/lib/utils/portfolio';
 
 import { Button, Wrapper } from '@/components';
 

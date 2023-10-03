@@ -1,7 +1,7 @@
 'use client';
 import { TabList } from '@/components';
 
-import { experienceSection } from '../lib/utils/portfolio';
+import { experienceSection } from '../lib/content/experienceSection';
 import { getSectionAnimation } from '../styles/animations';
 import { motion } from 'framer-motion';
 
