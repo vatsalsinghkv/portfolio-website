@@ -1,17 +1,26 @@
 <h1 align="center">
   vatsalsinghkv.vercel.app
 </h1>
+<div align="center">
+  <br>
+  <img src="https://img.shields.io/github/repo-size/vatsalsinghkv/portfolio-website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues/vatsalsinghkv/portfolio-website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-closed-raw/vatsalsinghkv/portfolio-website?style=for-the-badge" />
+  <br>
+  <img src="https://img.shields.io/github/forks/vatsalsinghkv/portfolio-website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr/vatsalsinghkv/portfolio-website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr-closed-raw/vatsalsinghkv/portfolio-website?style=for-the-badge" />
+  <br>
+  <img src="https://img.shields.io/github/stars/vatsalsinghkv/portfolio-website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/last-commit/vatsalsinghkv/portfolio-website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/commit-activity/y/vatsalsinghkv/portfolio-website?style=for-the-badge" />
+</div>
 
 <p align="center">
   A portfolio website i.e. <a href="https://vatsalsinghkv.vercel.app" target="_blank">vatsalsinghkv.vercel.app</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
 </p>
 
-<p align="center">
-  <a href="https://choosealicense.com/licenses/mit/">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen"/ >
-  </a>
-  <img src="https://img.shields.io/badge/Version-2.0.0-blue"/ >
-</p>
+
 
 [![My Portfolio](https://user-images.githubusercontent.com/68834718/214532356-7c56cdbd-0136-4d24-a532-d27e160ae72d.png)](https://vatsalsinghkv.vercel.app/)
 
@@ -80,6 +89,13 @@ Remember, Good PR makes you a Good contributor!
 1. Run the project locally, refer [how to use](#how-to-use).
 2. Follow [Contributing Guidelines](/CONTRIBUTING.md).
 
+
+<div align="center">
+  <a href="https://github.com/vatsalsinghkv/portfolio-website/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=vatsalsinghkv/portfolio-website" />
+  </a>
+</div>
+
 ## Continuous Development
 
 - [ ] Migrate to Next 13
@@ -107,3 +123,14 @@ Remember, Good PR makes you a Good contributor!
 ## Show Your Support
 
 Give a ⭐️ if you liked this project!
+
+
+
+<p align="center">
+  <a href="https://choosealicense.com/licenses/mit/">
+    <img src="https://img.shields.io/badge/License-MIT-brightgreen"/ >
+  </a>
+  <img src="https://img.shields.io/badge/Version-2.0.0-blue"/ >
+</p>
+
+
