@@ -1,7 +1,7 @@
 'use client';
+import { projectsSection } from '@/lib/content/projects';
 import { PROJECTS_INITIALLY } from '@/lib/utils/config';
 import { sortByYear } from '@/lib/utils/helper';
-import { projectsSection } from '@/lib/utils/portfolio';
 
 import { Button, ProjectCard, Wrapper } from '@/components';
 

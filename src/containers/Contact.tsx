@@ -1,4 +1,4 @@
-import { contactSection } from '@/lib/utils/portfolio';
+import { contactSection } from '@/lib/content/contact';
 
 import { Button, Wrapper } from '@/components';
 

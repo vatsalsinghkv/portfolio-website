@@ -1,4 +1,4 @@
-import { socialSection } from '@/lib/utils/portfolio';
+import { socialSection } from '@/lib/content/social';
 
 import { SocialIcon } from '@/components';
 
