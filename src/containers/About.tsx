@@ -1,5 +1,5 @@
 'use client';
-import { aboutSection } from '@/lib/content/aboutSection';
+import { aboutSection } from '@/lib/content/about';
 import { author } from '@/lib/content/portfolio';
 import { getId } from '@/lib/utils/helper';
 

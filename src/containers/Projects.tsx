@@ -1,5 +1,5 @@
 'use client';
-import { projectsSection } from '@/lib/content/projectsSection';
+import { projectsSection } from '@/lib/content/projects';
 import { PROJECTS_INITIALLY } from '@/lib/utils/config';
 import { sortByYear } from '@/lib/utils/helper';
 

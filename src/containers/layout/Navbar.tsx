@@ -1,5 +1,5 @@
 'use client';
-import { navbarSection } from '@/lib/content/navbarSection';
+import { navbarSection } from '@/lib/content/navbar';
 import { author } from '@/lib/content/portfolio';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { getBreakpointsWidth } from '@/lib/utils/helper';

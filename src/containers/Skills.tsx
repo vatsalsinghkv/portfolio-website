@@ -1,5 +1,5 @@
 'use client';
-import { skillsSection } from '@/lib/content/skillsSection';
+import { skillsSection } from '@/lib/content/skills';
 import { useTheme } from '@/lib/hooks/use-theme';
 
 import { Skill, Wrapper } from '@/components';
