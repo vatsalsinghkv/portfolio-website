@@ -29,7 +29,7 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     ".next/types/**/*.ts",
-    "src/containers/About.jsx"
+    "src/containers/About.tsx"
   ],
   "exclude": ["node_modules"]
 }
