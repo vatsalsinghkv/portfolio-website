@@ -7,14 +7,19 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "next lint",
-    "lint:fix": "eslint src --fix && yarn format"
+    "lint:fix": "eslint src --fix && yarn format",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "@lottiefiles/react-lottie-player": "^3.5.0",
     "framer-motion": "^9.0.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "next": "^13.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "save-dev": "^0.0.1-security",
     "sharp": "^0.31.3"
   },
   "devDependencies": {
@@ -33,8 +38,12 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "postcss": "^8.4.18",
-    "prettier": "2.8.3",
+    "prettier": "^2.8.3",
     "tailwindcss": "^3.2.1",
     "typescript": "4.8.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --fix",
+    "*.{js,jsx,css,md}": "prettier --write"
   }
 }
