@@ -6,7 +6,7 @@ type Props = {
 };
 
 const NavButton = ({ onClick, className, navbarCollapsed }: Props) => {
-  const classes = `bg-accent h-0.5 w-7 duration-200 ${
+  const classes = `bg-accent h-0.5 duration-200 ${
     navbarCollapsed ? 'absolute' : ''
   }`;
 
@@ -18,12 +18,12 @@ const NavButton = ({ onClick, className, navbarCollapsed }: Props) => {
       <div
         className={`space-y-1.5 flex flex-col items-end relative ${
           navbarCollapsed
-            ? 'space-y-0 rotate-90 duration-300 delay-100'
+            ? '-space-y-0 rotate-90 duration-300 delay-100'
             : 'group-hover:space-y-1 group-focus:space-y-1'
         }`}
       >
         <div
-          className={`${classes} ${navbarCollapsed ? 'rotate-45' : ''}`}
+          className={`w-7 ${classes} ${navbarCollapsed ? 'rotate-45' : ''}`}
         ></div>
         <div
           className={`${classes} w-6 ${
@@ -31,7 +31,7 @@ const NavButton = ({ onClick, className, navbarCollapsed }: Props) => {
           }`}
         ></div>
         <div
-          className={`${classes} ${navbarCollapsed ? '-rotate-45' : 'w-5'}`}
+          className={`${classes} ${navbarCollapsed ? '-rotate-45 w-7' : 'w-5'}`}
         ></div>
       </div>
     </button>
