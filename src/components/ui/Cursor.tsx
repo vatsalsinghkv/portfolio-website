@@ -27,7 +27,7 @@ const Cursor = ({ className = '' }: Props) => {
 
   return (
     <div
-      className={`fixed w-[100%] h-full z-30 transition duration-300 pointer-events-none -translate-x-1/2 -translate-y-1/2 bg-torch ${className}`}
+      className={`fixed w-[100%] h-[140%] z-30 transition duration-300 pointer-events-none -translate-x-1/2 -translate-y-1/2 bg-torch ${className}`}
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
