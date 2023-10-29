@@ -16,10 +16,10 @@ const NavButton = ({ onClick, className, navbarCollapsed }: Props) => {
       onClick={onClick}
     >
       <div
-        className={`space-y-1.5 flex flex-col items-end relative ${
+        className={`flex flex-col items-end relative ${
           navbarCollapsed
-            ? '-space-y-0 rotate-90 duration-300 delay-100'
-            : 'group-hover:space-y-1 group-focus:space-y-1'
+            ? 'space-y-0 rotate-90 duration-300 delay-100'
+            : 'group-hover:space-y-1 group-focus:space-y-1 space-y-1.5'
         }`}
       >
         <div
