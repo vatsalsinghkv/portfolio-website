@@ -115,7 +115,7 @@ Remember, Good PR makes you a Good contributor!
 
 ## Continuous Development
 
-- [ ] Migrate to Next 13
+- [x] Migrate to Next 13
 - [ ] Find alternative for framer motion
 - [ ] Add Content Management System (CMS)
 - [ ] Add test cases
