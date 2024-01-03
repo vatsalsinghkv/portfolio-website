@@ -2,6 +2,7 @@ import {
   About,
   Contact,
   Experience,
+  FeaturedProjects,
   Hero,
   Layout,
   Projects,
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
         <About />
         <Skills />
         <Experience />
+        <FeaturedProjects />
         <Projects />
         <Contact />
       </Layout>

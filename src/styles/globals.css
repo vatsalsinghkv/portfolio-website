@@ -49,6 +49,11 @@
 
 /* TYPOGRAPHY */
 
-.heading-secondary {
+.heading-secondary,
+.h2 {
   @apply text-3xl sm:text-4xl capitalize font-medium mb-8 sm:mb-12 text-dark-2;
+}
+.heading-tertiary,
+.h3 {
+  @apply text-xl sm:text-2xl tracking-wide capitalize font-medium text-dark-2;
 }

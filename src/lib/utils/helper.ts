@@ -1,8 +1,14 @@
 import tailwindConfig from '../../../tailwind.config';
 import { BreakpointType, ProjectType } from '../types';
+import clsx, { ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
 import resolveConfig from 'tailwindcss/resolveConfig';
 
 const fullConfig = resolveConfig(tailwindConfig);
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 /**
  * Returns the breakpoint's width
