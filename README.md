@@ -12,20 +12,6 @@
   <img src="https://img.shields.io/badge/Version-2.0.0-blue"/ >
 </p>
 
-<div align="center">
-  <img src="https://img.shields.io/github/repo-size/vatsalsinghkv/portfolio-website?style=for-the-badge" />
-  <img src="https://img.shields.io/github/issues/vatsalsinghkv/portfolio-website?style=for-the-badge" />
-  <img src="https://img.shields.io/github/issues-closed-raw/vatsalsinghkv/portfolio-website?style=for-the-badge" />
-  <br>
-  <img src="https://img.shields.io/github/forks/vatsalsinghkv/portfolio-website?style=for-the-badge" />
-  <img src="https://img.shields.io/github/issues-pr/vatsalsinghkv/portfolio-website?style=for-the-badge" />
-  <img src="https://img.shields.io/github/issues-pr-closed-raw/vatsalsinghkv/portfolio-website?style=for-the-badge" />
-  <br>
-  <img src="https://img.shields.io/github/stars/vatsalsinghkv/portfolio-website?style=for-the-badge" />
-  <img src="https://img.shields.io/github/last-commit/vatsalsinghkv/portfolio-website?style=for-the-badge" />
-  <img src="https://img.shields.io/github/commit-activity/y/vatsalsinghkv/portfolio-website?style=for-the-badge" />
-</div>
-
 <br>
 
 [![My Portfolio](https://user-images.githubusercontent.com/68834718/214532356-7c56cdbd-0136-4d24-a532-d27e160ae72d.png)](https://vatsalsinghkv.vercel.app/)
