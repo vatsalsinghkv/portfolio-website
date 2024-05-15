@@ -43,7 +43,7 @@ const FeaturedProject = ({
             alt={name}
             width={720}
             height={480}
-            className="h-full w-full object-cover duration-200 group-hover:scale-105 transition-transform"
+            className="object-cover w-full h-full transition-transform duration-200 group-hover:scale-105"
             placeholder="blur"
             blurDataURL={blurImageURL}
           />
@@ -78,7 +78,7 @@ const FeaturedProject = ({
             </h2>
           </div>
 
-          <div className="lg:bg-bg-secondary rounded-sm lg:shadow-lg lg:p-5">
+          <div className="rounded-sm lg:bg-bg-secondary lg:shadow-lg lg:p-5">
             <div
               className={cn(
                 'lg:max-w-sm text-slate-200 lg:text-inherit text-sm lg:text-base',
@@ -86,10 +86,10 @@ const FeaturedProject = ({
               )}
             >
               <p className="text-dark-1">{description}</p>
-              <div className="text-xs hidden lg:block capitalize font-mono text-accent my-3 lg:my-2 lg:mt-3">
+              <div className="hidden my-3 font-mono text-xs capitalize lg:block text-accent lg:my-2 lg:mt-3">
                 tasks / achievements
               </div>
-              <div className="text-base hidden lg:block lg:text-sm">
+              <div className="hidden text-base lg:block lg:text-sm">
                 {tasks}
               </div>
             </div>
@@ -146,7 +146,7 @@ const FeaturedProject = ({
             alt={name}
             width={720}
             height={480}
-            className="h-full w-full object-cover duration-200 group-hover:scale-105 transition-transform"
+            className="object-cover w-full h-full transition-transform duration-200 group-hover:scale-105"
             placeholder="blur"
             blurDataURL={blurImageURL}
           />
@@ -174,13 +174,15 @@ const FeaturedProject = ({
           </div>
 
           <div className={cn('text-slate-200 space-y-2 text-sm')}>
-            <p className="text-dark-1 text-base">{description}</p>
-            <div className="text-xs hidden lg:block capitalize font-mono text-accent my-3 lg:my-2 lg:mt-3">
+            <p className="text-base text-dark-1">{description}</p>
+            <div className="hidden my-3 font-mono text-xs capitalize lg:block text-accent lg:my-2 lg:mt-3">
               tasks / achievements
             </div>
-            {tasks?.split(',').map((task) => (
-              <div key={task.slice(0, 10)}>{task}</div>
-            ))}
+            <div className="mb-2 space-y-1">
+              {tasks?.split(',').map((task) => (
+                <div key={task.slice(0, 10)}>{task}</div>
+              ))}
+            </div>
           </div>
 
           <p
