@@ -50,7 +50,7 @@ const FeaturedProject = ({
           <Link
             href={`${url}`}
             target="_blank"
-            className="absolute inset-0 z-50 block bg-transparent"
+            className="absolute inset-0 z-10 block bg-transparent"
           />
         </div>
         <div
@@ -81,7 +81,7 @@ const FeaturedProject = ({
           <div className="rounded-sm lg:bg-bg-secondary lg:shadow-lg lg:p-5">
             <div
               className={cn(
-                'lg:max-w-sm text-slate-200 lg:text-inherit text-sm lg:text-base',
+                'lg:max-w-sm text-dark-1 lg:text-inherit text-sm lg:text-base',
                 align === 'right' && 'ml-auto'
               )}
             >
@@ -97,7 +97,7 @@ const FeaturedProject = ({
 
           <p
             className={cn(
-              'font-mono text-[10px] text-sky-400 lg:text-accent lg:text-xs justify-center capitalize flex flex-wrap gap-2 lg:gap-x-5 items-center lg:justify-end',
+              'font-mono text-[10px] text-accent lg:text-accent lg:text-xs justify-center capitalize flex flex-wrap gap-2 lg:gap-x-5 items-center lg:justify-end',
               align === 'left' && 'lg:justify-start'
             )}
           >
@@ -153,7 +153,7 @@ const FeaturedProject = ({
           <Link
             href={`${url}`}
             target="_blank"
-            className="absolute inset-0 z-50 block bg-transparent"
+            className="absolute inset-0 z-10 block bg-transparent"
           />
         </header>
 
@@ -173,7 +173,7 @@ const FeaturedProject = ({
             </h2>
           </div>
 
-          <div className={cn('text-slate-200 space-y-2 text-sm')}>
+          <div className={cn('text-dark-1 space-y-2 text-sm')}>
             <p className="text-base text-dark-1">{description}</p>
             <div className="hidden my-3 font-mono text-xs capitalize lg:block text-accent lg:my-2 lg:mt-3">
               tasks / achievements
@@ -187,7 +187,7 @@ const FeaturedProject = ({
 
           <p
             className={cn(
-              'font-mono text-[10px] text-sky-400 lg:text-accent lg:text-xs justify-center capitalize flex flex-wrap gap-2 lg:gap-x-5 items-center lg:justify-end',
+              'font-mono text-[10px] text-accent lg:text-accent lg:text-xs justify-center capitalize flex flex-wrap gap-2 lg:gap-x-5 items-center lg:justify-end',
               align === 'left' && 'lg:justify-start'
             )}
           >
