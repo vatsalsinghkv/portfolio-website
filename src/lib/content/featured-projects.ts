@@ -49,7 +49,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       tasks:
         'Implemented NextAuth authentication, integrated Mailchimp for newsletter subscription, developed a custom hook for dark mode, created UI components in the Dashboard, and used Notion as a CMS for the blogs page.',
       url: 'https://www.drafton.io/',
-      img: 'https://user-images.githubusercontent.com/68834718/265245167-9e433e3e-1fbb-4a23-8f05-d3a444824e18.png',
+      img: 'https://i.postimg.cc/4N6dsGcm/Screenshot-2024-06-17-at-11-05-22-PM.png',
       tags: ['Open AI', 'NextJs', 'TypeScript', 'TailwindCSS', 'Prisma'],
     },
   ],
