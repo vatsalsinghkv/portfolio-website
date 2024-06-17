@@ -45,6 +45,10 @@
   * {
     @apply focus:outline-dashed outline-[3px] outline-offset-4 outline-accent;
   }
+
+  ::selection {
+    @apply dark:bg-slate-600/30 bg-slate-400/30 text-accent;
+  }
 }
 
 /* TYPOGRAPHY */
