@@ -92,7 +92,6 @@ Remember, Good PR makes you a Good contributor!
 1. Run the project locally, refer [how to use](#how-to-use).
 2. Follow [Contributing Guidelines](/CONTRIBUTING.md).
 
-
 <div align="center">
   <a href="https://github.com/vatsalsinghkv/portfolio-website/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=vatsalsinghkv/portfolio-website" />
