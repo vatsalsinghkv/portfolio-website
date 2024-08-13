@@ -11,7 +11,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       tasks:
         "As a freelancer, I understood the client's requirements and executed a plan to develop and design an e-commerce platform, including the frontend UI, backend setup with database, APIs, and integration with payment platforms.",
       url: 'https://www.getlifegard.com/',
-      img: 'https://i.postimg.cc/zXFz7VvF/Screenshot-2024-05-19-at-12-50-34-PM.png',
+      img: 'https://www.getlifegard.com/images/og.png',
       tags: [
         'NextJs 14',
         'TypeScript',
