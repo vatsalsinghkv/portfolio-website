@@ -23,6 +23,11 @@ module.exports = {
         hostname: 'i.postimg.cc',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'buttons-animations-kv.vercel.app',
+        pathname: '/**',
+      },
     ],
   },
 };
