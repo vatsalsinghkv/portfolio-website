@@ -6,6 +6,15 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'easy fix',
+      url: 'https://easy-fix.vercel.app/',
+      repo: 'https://github.com/vatsalsinghkv/easy-fix',
+      img: 'https://user-images.githubusercontent.com/68834718/258852895-df5c6da7-a698-40fb-97c3-a5474314cb85.png',
+      year: 2023,
+      tags: ['React', 'Tailwind'],
+    },
+    {
+      id: getId(),
       name: 'beautiful animations',
       url: 'https://beautiful-animations-kv.vercel.app/',
       repo: 'https://github.com/vatsalsinghkv/beautiful-animations',
@@ -15,12 +24,12 @@ export const projectsSection: ProjectsSectionType = {
     },
     {
       id: getId(),
-      name: 'easy fix',
-      url: 'https://easy-fix.vercel.app/',
-      repo: 'https://github.com/vatsalsinghkv/easy-fix',
-      img: 'https://user-images.githubusercontent.com/68834718/258852895-df5c6da7-a698-40fb-97c3-a5474314cb85.png',
+      name: 'buttons animations',
+      url: 'https://buttons-animations-kv.vercel.app/',
+      repo: 'https://github.com/vatsalsinghkv/button-animations',
+      img: 'https://buttons-animations-kv.vercel.app/og.png',
       year: 2023,
-      tags: ['React', 'Tailwind'],
+      tags: ['CSS Animations', 'Sass'],
     },
     {
       id: getId(),
