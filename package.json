@@ -11,7 +11,6 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "-": "^0.0.1",
     "@lottiefiles/react-lottie-player": "^3.5.0",
     "clsx": "^2.0.0",
     "framer-motion": "^9.0.3",
