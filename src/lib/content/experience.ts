@@ -8,7 +8,7 @@ export const experienceSection: ExperienceSectionType = {
       companyUrl: 'https://www.pixelwand.live/',
       role: 'frontend developer',
       started: 'july 2023',
-      upto: 'present',
+      upto: 'july 2024',
       tasks: [
         'Implemented UI components with React & Next.js, TypeScript & Tailwind CSS.',
         'Developed and maintained design systems that separates design logic.',
