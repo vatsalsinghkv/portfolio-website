@@ -15,6 +15,11 @@ module.exports = {
       },
       {
         protocol: 'https',
+        hostname: 'www.valuemetrix.io',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'github-production-user-asset-6210df.s3.amazonaws.com',
         pathname: '/**',
       },

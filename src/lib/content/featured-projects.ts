@@ -23,6 +23,16 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
     },
     {
       id: getId(),
+      name: 'Valuemetrix',
+      description: 'An AI Powered Investment Platform.',
+      tasks:
+        'I strategically planned project milestones, led a cross-functional team, established a design system, developed the website, and integrated Stripe payments with secure authentication.',
+      url: 'https://www.valuemetrix.io/',
+      img: 'https://www.valuemetrix.io/images/og.png',
+      tags: ['AI/ML', 'NextJs', 'TypeScript', 'TailwindCSS', 'Prisma'],
+    },
+    {
+      id: getId(),
       name: 'Velvi Matrimony',
       description:
         'A platform that redefines the way individuals find their life partners.',
@@ -32,7 +42,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       img: 'https://i.postimg.cc/tRS4GvzJ/Screenshot-2024-02-27-at-5-48-49-PM.png',
       tags: ['NextJs', 'TypeScript', 'TailwindCSS', 'APIs'],
     },
-    {
+    /*   {
       id: getId(),
       name: 'Integra',
       description: 'An AI-Powered Leads Generation Platform.',
@@ -41,13 +51,14 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       url: 'https://www.integraleads.xyz/',
       img: 'https://user-images.githubusercontent.com/68834718/279476369-2f69466a-71db-4da0-9afd-04f8f0efb621.jpeg',
       tags: ['AI/ML', 'NextJs', 'TypeScript', 'TailwindCSS', 'Express'],
-    },
+    }, */
+
     {
       id: getId(),
       name: 'Drafton',
       description: 'The AI-powered platform that simplifies proposal creation.',
       tasks:
-        'Implemented NextAuth authentication, integrated Mailchimp for newsletter subscription, developed a custom hook for dark mode, created UI components in the Dashboard, and used Notion as a CMS for the blogs page.',
+        'I designed and developed the landing page and implemented the dashboard by creating a user interface and integrating APIs.',
       url: 'https://www.drafton.io/',
       img: 'https://i.postimg.cc/4N6dsGcm/Screenshot-2024-06-17-at-11-05-22-PM.png',
       tags: ['Open AI', 'NextJs', 'TypeScript', 'TailwindCSS', 'Prisma'],
