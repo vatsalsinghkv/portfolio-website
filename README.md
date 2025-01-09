@@ -47,7 +47,7 @@
 
 ## How to use
 
-###### To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [yarn](https://yarnpkg.com) installed on your computer).
+###### To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js (v20.18.0)](https://nodejs.org/en/download/) (which comes with [yarn](https://yarnpkg.com) installed on your computer).
 
 1. Fork this repository and clone the project
 
