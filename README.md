@@ -100,10 +100,10 @@ Remember, Good PR makes you a Good contributor!
 
 ## Continuous Development
 
+- [ ] Case Study Page
 - [x] Migrate to Next 13
 - [ ] Migrate icons from iconify to lucid-icons
 - [ ] Improve nav-link hover animation
-- [ ] Find alternative for framer motion
 - [ ] Add test cases
 - [ ] Separate route (archive) for all the projects with filters
 
