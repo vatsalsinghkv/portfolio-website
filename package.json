@@ -47,5 +47,6 @@
     "*.{js,jsx}": "eslint --fix",
     "*.{js,jsx,css,md}": "prettier --write"
   },
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "packageManager": "yarn@4.9.1"
 }
