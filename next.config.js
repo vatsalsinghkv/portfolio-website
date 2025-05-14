@@ -10,7 +10,7 @@ module.exports = {
       },
       {
         protocol: 'https',
-        hostname: 'www.getlifegard.com',
+        hostname: 'life-kit.vercel.app',
         pathname: '/**',
       },
       {
