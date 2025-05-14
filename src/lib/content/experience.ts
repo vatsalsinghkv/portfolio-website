@@ -4,6 +4,17 @@ export const experienceSection: ExperienceSectionType = {
   title: "where i've worked",
   experiences: [
     {
+      company: 'Dashseller',
+      companyUrl: 'https://www.dashseller.com/',
+      role: 'full-stack developer',
+      started: 'sep 2024',
+      upto: 'nov 2024',
+      tasks: [
+        'Implemented development tools, GitHub Actions, workflows, and Git flow to seamless collaboration.',
+        'Integrated Notion as a CMS to manage and display content such as blogs, job postings, and documentation.',
+      ],
+    },
+    {
       company: 'Pixelwand',
       companyUrl: 'https://www.pixelwand.live/',
       role: 'frontend developer',
@@ -35,10 +46,10 @@ export const experienceSection: ExperienceSectionType = {
       started: 'june 2022',
       upto: 'january 2023',
       tasks: [
-        'Built static frontend UI from the ground up using Next.js and Figma handover designs.',
-        'Architected the folder structure and initial setup of the app.',
-        'Reviewed and approved multiple Pull requests.',
-        'Worked remotely with a distributed team from around the globe, collaborating closely using screen-sharing.',
+        'Developed a static frontend UI from scratch using Next.js, based on Figma design handovers.',
+        'Designed and implemented the folder structure and initial application setup to ensure scalability.',
+        'Reviewed and approved pull requests to maintain code quality and consistency.',
+        'Collaborated remotely with a globally distributed team, leveraging screen-sharing for effective communication.',
       ],
     },
   ],
