@@ -13,5 +13,6 @@ COPY . .
 RUN yarn build
 
 ENV NODE_ENV=production
+ENV HOST=0.0.0.0
 
 CMD ["yarn", "start"]
