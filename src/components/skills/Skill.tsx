@@ -1,14 +1,11 @@
 'use client';
-import dynamic from 'next/dynamic';
 import { SoftwareSkillType } from '@/lib/types';
 import { getId } from '@/lib/utils/helper';
 
 import { ListItem, SkillIcon } from '@/components';
 import { motion, MotionProps } from 'framer-motion';
 
-const ShowLottie = dynamic(() => import('@/components/ui/ShowLottie'), {
-  ssr: false,
-});
+import { DynamicShowLottie } from '@/components/dynamic/Dynamic';
 
 type Props = {
   lottie?: any;
@@ -50,7 +47,10 @@ const Skill = ({
         </ul>
       </div>
       {/* Right */}
-      <ShowLottie path={lottie} className="md:min-h-[448px] md:min-w-[448px]" />
+      <DynamicShowLottie
+        path={lottie}
+        className="md:min-h-[448px] md:min-w-[448px]"
+      />
     </motion.div>
   );
 };

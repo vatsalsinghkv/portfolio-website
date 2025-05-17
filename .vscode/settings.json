@@ -7,7 +7,12 @@
   },
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   // Tailwind CSS Autocomplete, add more if used in projects
-  "tailwindCSS.classAttributes": ["class", "className", "classNames", "containerClassName"],
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "classNames",
+    "containerClassName"
+  ],
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "WillLuke.nextjs.hasPrompted": true
 }
