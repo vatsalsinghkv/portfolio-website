@@ -1,6 +1,7 @@
 'use client';
 
-import featuredProjectsSection from '@/lib/content/featured-projects';
+// Updated import path and variable name
+import featuredVideosSection from '@/lib/content/featured-videos';
 
 import { Wrapper } from '@/components';
 import FeaturedProject from '@/components/ui/FeaturedProject';
@@ -12,20 +13,22 @@ const FeaturedProjects = () => {
     <Wrapper id="projects" {...getSectionAnimation}>
       <div className="mb-20 space-y-3 text-center lg:text-left">
         <h2 className="heading-secondary !mb-0 capitalize">
-          {featuredProjectsSection.title}
+          {featuredVideosSection.title}
         </h2>
 
         <p className="font-mono lg:hidden text-accent capitalize text-xs lg:mb-2.5">
-          featured projects
+          featured videos {/* Changed text from "featured projects" */}
         </p>
       </div>
 
       <div className="space-y-10 md:space-y-16 lg:space-y-36">
-        {featuredProjectsSection.projects.map((project, i) => (
+        {/* Updated to iterate over .videos instead of .projects */}
+        {/* Props passed to FeaturedProject might need adjustment if its definition changed based on video structure */}
+        {featuredVideosSection.videos.map((video, i) => (
           <FeaturedProject
-            key={project.id}
+            key={video.id}
             align={i % 2 === 0 ? 'right' : 'left'}
-            {...project}
+            {...video}
             {...getSectionAnimation}
           />
         ))}

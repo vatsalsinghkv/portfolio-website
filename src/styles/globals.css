@@ -3,51 +3,24 @@
 @tailwind utilities;
 
 @layer base {
-  /* Color variables for future use */
-  :root {
-    /* --color-bg: #fcfaf8; */
-    /* --color-accent: #14cf93; */
-    /* --color-accent: ##64ffda; */
-    /* --color-accent: #61dafb); */
-    /* --color-text: #383838; */
-    /* --color-dark-2: #282828; */
-    /* --color-dark-3: #a2a2a2; */
-
-    /* Light Theme */
-    --color-bg: theme(colors.slate.50);
-    --color-bg-secondary: theme(colors.white);
-    --color-accent: theme(colors.sky.500);
-    --color-accent-light: theme(colors.sky.500/0.1);
-    --color-accent-torch: theme(colors.blue.700/0.15);
-    --color-text: theme(colors.slate.600);
-    --color-dark-1: theme(colors.slate.900);
-    --color-dark-2: theme(colors.slate.700);
-    --color-dark-3: theme(colors.slate.300);
-  }
-
-  /* Dark Theme */
-  .dark {
-    --color-bg: theme(colors.slate.900);
-    --color-bg-secondary: theme(colors.slate.800);
-    --color-accent: theme(colors.sky.400);
-    --color-accent-light: theme(colors.sky.400/0.1);
-    --color-text: theme(colors.slate.400);
-    --color-dark-1: theme(colors.slate.200);
-    --color-dark-2: theme(colors.slate.300);
-    --color-dark-3: theme(colors.slate.700);
-  }
-
   @font-face {
     font-family: 'agustina';
     src: url('/fonts/Agustina-Signature.otf') format('opentype');
   }
 
+  /* Apply base background and text colors */
+  body {
+    @apply bg-background-primary text-text-primary;
+  }
+
   * {
+    /* Updated to use the new accent color from tailwind.config.js */
     @apply focus:outline-dashed outline-[3px] outline-offset-4 outline-accent;
   }
 
   ::selection {
-    @apply dark:bg-slate-600/30 bg-slate-400/30 text-accent;
+    /* Assuming accent is for general purpose, might need a specific selection color if accent is too bright */
+    @apply bg-accent/30 text-text-primary;
   }
 }
 
@@ -55,9 +28,11 @@
 
 .heading-secondary,
 .h2 {
-  @apply text-3xl sm:text-4xl capitalize font-medium mb-8 sm:mb-12 text-dark-2;
+  /* Updated to use new text color variables */
+  @apply text-3xl sm:text-4xl capitalize font-medium mb-8 sm:mb-12 text-text-primary;
 }
 .heading-tertiary,
 .h3 {
-  @apply text-xl sm:text-2xl tracking-wide capitalize font-medium text-dark-2;
+  /* Updated to use new text color variables, assuming text-secondary for less emphasis if needed or stick to text-primary */
+  @apply text-xl sm:text-2xl tracking-wide capitalize font-medium text-text-secondary;
 }

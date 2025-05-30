@@ -1,4 +1,4 @@
-import { seoData } from '@/lib/content/portfolio';
+import { seoData } from '@/lib/content/platform'; // Updated import path
 import ThemeProvider from '@/lib/hooks/use-theme';
 import fontVariables from '@/lib/utils/fonts';
 

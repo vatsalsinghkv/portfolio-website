@@ -1,19 +1,32 @@
 import { footerSection } from '@/lib/content/footer';
+import Link from 'next/link'; // Import Next.js Link for client-side navigation if URLs are internal
 
-import SocialLinks from '../Social/SocialLinks';
+// SocialLinks import is removed as it's no longer used in this footer design.
 
 const Footer = () => {
+  const { copyrightText, links } = footerSection;
+
   return (
-    <footer className="max-w-lg mx-auto mb-5 font-mono text-xs text-center">
-      <SocialLinks className="flex justify-center gap-3 mb-3 md:hidden" />
-      <a
-        href={footerSection.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="transition hover:text-accent"
-      >
-        {footerSection.title}
-      </a>
+    <footer className="w-full px-4 py-8 text-center text-text-secondary bg-background-secondary"> {/* Updated styling for better visibility */}
+      {/* Footer Links */}
+      <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4">
+        {links.map((link) => (
+          <Link
+            key={link.title}
+            href={link.url}
+            className="text-xs transition hover:text-accent hover:underline"
+            // target="_blank" // Only if links are external, otherwise remove for internal navigation
+            // rel="noopener noreferrer" // Only if links are external
+          >
+            {link.title}
+          </Link>
+        ))}
+      </div>
+
+      {/* Copyright Text */}
+      <p className="text-xs">
+        {copyrightText}
+      </p>
     </footer>
   );
 };

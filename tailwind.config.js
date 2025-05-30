@@ -13,14 +13,12 @@ module.exports = {
         xs: '375px',
       },
       colors: {
-        bg: 'var(--color-bg)',
-        'bg-secondary': 'var(--color-bg-secondary)',
-        accent: 'var(--color-accent)',
-        'accent-light': 'var(--color-accent-light)',
-        text: 'var(--color-text)',
-        'dark-1': 'var(--color-dark-1)',
-        'dark-2': 'var(--color-dark-2)',
-        'dark-3': 'var(--color-dark-3)',
+        'background-primary': '#0A192F',
+        'background-secondary': '#1D2D50',
+        'text-primary': '#CCD6F6',
+        'text-secondary': '#8892B0',
+        'accent': '#64FFDA',
+        'card-background': '#1D2D50', // Same as background-secondary
       },
       transitionTimingFunction: {
         'in-scroll': 'cubic-bezier(0.645, 0.045, 0.355, 1)',

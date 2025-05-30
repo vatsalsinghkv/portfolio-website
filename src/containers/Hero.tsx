@@ -23,13 +23,13 @@ const Hero = () => {
   return (
     <Wrapper
       id="hero"
-      className="flex flex-col justify-center h-full min-h-screen gap-6 mt-12 xs:gap-7 xs:mt-0"
+      className="flex flex-col justify-center h-full min-h-screen gap-6 mt-12 xs:gap-7 xs:mt-0 bg-background-primary" // Added bg-background-primary
     >
       <motion.p
         variants={slideUp({ delay: getAnimationDelay(0) })}
         initial="hidden"
         animate="show"
-        className="font-mono text-sm md:text-base text-accent"
+        className="font-mono text-sm md:text-base text-accent" // text-accent is fine
       >
         {subtitle}
       </motion.p>
@@ -39,7 +39,7 @@ const Hero = () => {
           variants={slideUp({ delay: getAnimationDelay(1) })}
           initial="hidden"
           animate="show"
-          className="text-slate-900 dark:text-slate-200 capitalize mb-2 leading-[1.1]"
+          className="text-text-primary capitalize mb-2 leading-[1.1]" // Changed to text-text-primary
         >
           {title}
         </motion.h1>
@@ -47,7 +47,7 @@ const Hero = () => {
           variants={slideUp({ delay: getAnimationDelay(2) })}
           initial="hidden"
           animate="show"
-          className="leading-[1.2]"
+          className="text-text-secondary leading-[1.2]" // Changed to text-text-secondary
         >
           {tagline}
         </motion.h1>
@@ -57,7 +57,7 @@ const Hero = () => {
         variants={slideUp({ delay: getAnimationDelay(3) })}
         initial="hidden"
         animate="show"
-        className="max-w-xl text-base md:text-lg"
+        className="max-w-xl text-base md:text-lg text-text-secondary" // Changed to text-text-secondary
       >
         {description}
       </motion.p>
@@ -79,7 +79,7 @@ const Hero = () => {
           initial="hidden"
           animate="show"
           href={cta?.url ?? '#'}
-          className={`mt-5 xs:mt-8 md:mt-10 ${
+          className={`mt-5 xs:mt-8 md:mt-10 bg-accent text-background-primary hover:bg-accent/90 active:scale-95 transition-transform duration-75 ${ // Added active:scale-95 and transition
             cta.hideInDesktop ? 'md:hidden' : ''
           }`}
           sameTab={cta?.sameTab}
