@@ -1,16 +1,16 @@
 import { HeroSectionType } from '@/lib/types/sections';
-import { resumeFileName } from '@/lib/utils/config';
+// resumeFileName import removed as it's no longer used in this file.
 
 export const heroSection: HeroSectionType = {
-  subtitle: 'Hi, my name is',
-  title: 'vatsal singh.',
-  tagline: 'I create visually pleasing interfaces for the web.',
+  subtitle: 'New Release',
+  title: 'Galaxy Voyagers',
+  tagline: 'Their journey will define a universe.',
   description:
-    "I'm a passionate Full-Stack web developer with hands-on experience in building web applications using React.js & Next.js with TypeScript, TailwindCSS, and Prisma, with UI/UX designing.",
-  specialText: 'Currently available for freelance',
+    'In a distant future, a rogue crew pilots an experimental starship to uncover ancient secrets, facing cosmic dangers and powerful enemies along the way. Experience the epic adventure, exclusively on StreamFlix.',
+  specialText: 'Action | Sci-Fi | Adventure',
   cta: {
-    title: 'see my resume',
-    url: `/${resumeFileName}`,
-    hideInDesktop: true,
+    title: 'Watch Trailer',
+    url: '#', // Placeholder URL for the trailer
+    sameTab: true, // Assuming the trailer link should open in the same tab
   },
 };

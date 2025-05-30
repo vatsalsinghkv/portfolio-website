@@ -1,16 +1,13 @@
 import { NavbarSectionType } from '@/lib/types/sections';
-import { resumeFileName } from '@/lib/utils/config';
+// resumeFileName is no longer needed as CTA is removed.
 
 export const navbarSection: NavbarSectionType = {
   navLinks: [
-    { name: 'about', url: '/#about' },
-    { name: 'skills', url: '/#skills' },
-    { name: 'experience', url: '/#experience' },
-    { name: 'projects', url: '/#projects' },
-    { name: 'contact', url: '/#contact' },
+    { name: 'Home', url: '/' }, // Assuming '/' is the home page route
+    { name: 'TV Shows', url: '#' }, // Placeholder URL
+    { name: 'Movies', url: '#' },   // Placeholder URL
+    { name: 'My List', url: '#' },  // Placeholder URL
   ],
-  cta: {
-    title: 'resume',
-    url: `/${resumeFileName}`,
-  },
+  // CTA button (resume) removed as it's not relevant for a streaming platform
+  cta: undefined,
 };

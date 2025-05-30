@@ -1,13 +1,8 @@
 import {
-  About,
-  Contact,
-  Experience,
   FeaturedProjects,
   Hero,
   Layout,
-  Projects,
-  Skills,
-} from '@/containers';
+} from '@/containers'; // Removed About, Contact, Experience, Projects, Skills
 
 import type { NextPage } from 'next';
 
@@ -22,12 +17,12 @@ const Home: NextPage = () => {
     <>
       <Layout>
         <Hero />
-        <About />
-        <Skills />
-        <Experience />
         <FeaturedProjects />
-        <Projects />
-        <Contact />
+        {/*
+          Other sections like About, Skills, Experience, Projects, Contact
+          have been removed as they are not suitable for a streaming platform's main page.
+          New streaming-specific sections could be added here later.
+        */}
       </Layout>
     </>
   );

@@ -1,6 +1,7 @@
 'use client';
 import { navbarSection } from '@/lib/content/navbar';
-import { author } from '@/lib/content/portfolio';
+// 'author' import removed. Importing 'platformName' from 'platform.ts' (formerly 'portfolio.ts')
+import { platformName } from '@/lib/content/platform';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { getBreakpointsWidth } from '@/lib/utils/helper';
 
@@ -93,7 +94,7 @@ const Navbar = () => {
     >
       <h1 className="relative text-2xl capitalize font-signature text-accent group top-1">
         <Link href="/#hero" className="block">
-          {author.name}
+          {platformName}
           <div className="absolute bottom-1.5 left-0 h-[1px] w-0 group-hover:w-full bg-accent duration-300"></div>
         </Link>
       </h1>
