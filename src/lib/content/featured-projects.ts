@@ -22,6 +22,15 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       img: '', // Image URL not provided
       tags: ['Machine Learning', 'sklearn', 'Prediction', 'Healthcare', 'Python'],
     },
+    {
+      id: getId(),
+      name: 'Onion Link Shortener',
+      description: 'A simple URL shortener service using Python and Flask, designed for operational security with .onion links. Features include custom aliases, redirection, and link history/click counts.',
+      tasks: 'Developed a secure URL shortener for .onion links using Python and Flask. Implemented features such as custom alias generation, redirection logic, and tracking of link history and click counts.',
+      url: '', // Live URL not provided
+      img: '/images/project-placeholder.png', // Placeholder image
+      tags: ['Python', 'Flask', 'URL Shortener', 'Security', '.onion', 'Web App'],
+    },
     // Add other featured projects here if needed, or remove this comment
   ],
 };

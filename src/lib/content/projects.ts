@@ -33,5 +33,23 @@ export const projectsSection: ProjectsSectionType = {
       year: currentYear, // Placeholder year
       tags: ['Machine Learning', 'sklearn', 'Prediction', 'Healthcare', 'Python'],
     },
+    {
+      id: getId(),
+      name: 'Onion Link Shortener',
+      url: '', // Live URL not provided
+      repo: 'https://github.com/ToyLikePeopleMakeMeBoyLike/Onion',
+      img: '/images/project-placeholder.png', // Placeholder image
+      year: currentYear,
+      tags: ['Python', 'Flask', 'URL Shortener', 'Security', '.onion', 'Web App'],
+    },
+    {
+      id: getId(),
+      name: 'NASA Launch System',
+      url: '', // Live URL not provided
+      repo: 'https://github.com/ToyLikePeopleMakeMeBoyLike/nasa-project',
+      img: '/images/project-placeholder.png', // Placeholder image
+      year: currentYear,
+      tags: ['Node.js', 'Express', 'API', 'NASA API', 'SpaceX API', 'Simulation', 'Educational Project'],
+    },
   ],
 };
