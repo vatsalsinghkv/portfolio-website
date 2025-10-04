@@ -38,7 +38,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
         'A platform that redefines the way individuals find their life partners.',
       tasks:
         'As a freelancer, I developed this project by planning, communicating with the client, gathering feedback, implementing UI & pages, and integrating real-time data fetching with filtering functionality.',
-      url: 'https://velvi.vercel.app/',
+      url: 'https://www.velvimatrimony.in/',
       img: 'https://i.postimg.cc/tRS4GvzJ/Screenshot-2024-02-27-at-5-48-49-PM.png',
       tags: ['NextJs', 'TypeScript', 'TailwindCSS', 'APIs'],
     },
