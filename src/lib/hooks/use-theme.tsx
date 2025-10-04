@@ -27,12 +27,18 @@ export default function ThemeProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(
-    typeof window !== 'undefined' &&
-      JSON.parse(localStorage.getItem('darkMode') || 'true')
-      ? true
-      : false
-  );
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false;
+    const stored = localStorage.getItem('darkMode');
+    if (stored !== null) {
+      try {
+        return JSON.parse(stored);
+      } catch {
+        return false;
+      }
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
 
   const toggle = useCallback(() => {
     setIsDarkMode((prev) => !prev);
