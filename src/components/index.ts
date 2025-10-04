@@ -16,3 +16,4 @@ export { default as ProjectCard } from './ui/ProjectCard';
 // export { default as ShowLottie } from './ui/ShowLottie';
 export { default as Sidebar } from './ui/Sidebar';
 export { default as Wrapper } from './ui/Wrapper';
+export { default as DarkModeToggle } from "./DarkModeToggle";
