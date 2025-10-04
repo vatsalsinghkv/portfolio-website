@@ -47,5 +47,8 @@
     "*.{js,jsx}": "eslint --fix",
     "*.{js,jsx,css,md}": "prettier --write"
   },
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "version": "0.0.0"
 }
