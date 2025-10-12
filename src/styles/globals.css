@@ -42,8 +42,10 @@
     src: url('/fonts/Agustina-Signature.otf') format('opentype');
   }
 
-  * {
-    @apply focus:outline-dashed outline-[3px] outline-offset-4 outline-accent;
+  /* Show a clear focus ring only for keyboard users using :focus-visible
+     This preserves accessibility while avoiding noisy outlines on mouse click */
+  *:focus-visible {
+    @apply outline-dashed outline-[3px] outline-offset-4 outline-accent;
   }
 
   ::selection {

@@ -2,6 +2,7 @@ export { default as About } from './About';
 export { default as Contact } from './Contact';
 export { default as Email } from './Email';
 export { default as Experience } from './Experience';
+export { default as Academics } from './Academics';
 export { default as FeaturedProjects } from './FeaturedProjects';
 export { default as Hero } from './Hero';
 export { default as Footer } from './layout/Footer';
