@@ -4,6 +4,18 @@ export const experienceSection: ExperienceSectionType = {
   title: "where i've worked",
   experiences: [
     {
+      company: 'PsyConnect',
+      companyUrl: 'https://psyconnect.co.in/',
+      role: 'full-stack developer intern',
+      started: 'june 2025',
+      upto: 'current',
+      tasks: [
+        'Spearheading the digital transformation of services, moving from offline operations to an accessible online platform.',
+        'Led end-to-end website development, overseeing technical direction and project execution.',
+        'Mentored and guided two development interns to ensure quality deliverables and skill growth.'
+      ],
+    },
+    {
       company: 'Dashseller',
       companyUrl: 'https://www.dashseller.com/',
       role: 'full-stack developer',
