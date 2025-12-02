@@ -8,6 +8,7 @@ export { default as ListItem } from './lists/ListItem';
 export { default as TabList } from './lists/TabList';
 export { default as Skill } from './skills/Skill';
 export { default as SkillIcon } from './skills/SkillIcon';
+export { default as AcademicItem } from './academics/AcademicItem';
 export { default as SocialIcon } from './socials/SocialIcon';
 export { default as SocialLink } from './socials/SocialLink';
 export { default as AuthorImage } from './ui/AuthorImage';
