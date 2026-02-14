@@ -10,12 +10,22 @@ module.exports = {
       },
       {
         protocol: 'https',
+        hostname: 'journally-kv.vercel.app',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'life-kit.vercel.app',
         pathname: '/**',
       },
       {
         protocol: 'https',
         hostname: 'www.valuemetrix.io',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'psyconnect.co.in',
         pathname: '/**',
       },
       {
@@ -31,6 +41,11 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'buttons-animations-kv.vercel.app',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'getlifegard.vercel.app',
         pathname: '/**',
       },
     ],

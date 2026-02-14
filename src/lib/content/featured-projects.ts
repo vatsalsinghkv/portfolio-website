@@ -6,12 +6,28 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'PsyConnect',
+      description: 'A thoughtfully designed mental health platform.',
+      tasks:
+        'Led the end-to-end digital transformation of offline psychological services into a scalable web platform. Designed and developed a confidentiality-aware system with secure data workflows, appointment management, responsive UI, and accessibility-focused components. Collaborated closely with stakeholders to translate psychological service requirements into a calm, safe, and user-centered digital experience.',
+      url: 'https://psyconnect.co.in/',
+      img: 'https://psyconnect.co.in/images/og.png',
+      tags: [
+        'Next.js 14',
+        'TypeScript',
+        'TailwindCSS',
+        'ShadCN',
+        'Framer Motion',
+      ],
+    },
+    {
+      id: getId(),
       name: 'GetLifeGuard',
       description: 'An E-Commerce platform for Self-Defense Keychain.',
       tasks:
         "As a freelancer, I understood the client's requirements and executed a plan to develop and design an e-commerce platform, including the frontend UI, backend setup with database, APIs, and integration with payment platforms.",
-      url: 'https://life-kit.vercel.app/',
-      img: 'https://life-kit.vercel.app/images/og.png',
+      url: 'https://getlifegard.vercel.app/',
+      img: 'https://getlifegard.vercel.app/images/og.png',
       tags: [
         'NextJs 14',
         'TypeScript',
@@ -21,7 +37,29 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
         'Stripe',
       ],
     },
+
     {
+      id: getId(),
+      name: 'Journally',
+      url: 'https://journally-kv.vercel.app/',
+      repo: 'https://github.com/vatsalsinghkv/journally',
+      img: 'https://journally-kv.vercel.app/images/preview-close.png',
+      // year: 2025,
+      description:
+        'A privacy-first digital journaling platform for calm self-reflection.',
+      tasks:
+        'Designed and developed a full-stack journaling application with secure authentication, protected user data workflows, and scalable database architecture. Implemented complete CRUD functionality with server-side validation, focusing on privacy, accessibility, and a distraction-free user experience.',
+      tags: [
+        'Next.js 14',
+        'TypeScript',
+        'TailwindCSS',
+        'Prisma',
+        'PostgreSQL',
+        'Better Auth',
+      ],
+    },
+
+    /*  {
       id: getId(),
       name: 'Valuemetrix',
       description: 'An AI Powered Investment Platform.',
@@ -30,7 +68,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       url: 'https://www.valuemetrix.io/',
       img: 'https://www.valuemetrix.io/images/og.png',
       tags: ['AI/ML', 'NextJs', 'TypeScript', 'TailwindCSS', 'Prisma'],
-    },
+    }, */
     {
       id: getId(),
       name: 'Velvi Matrimony',

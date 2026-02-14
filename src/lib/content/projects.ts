@@ -10,8 +10,8 @@ export const projectsSection: ProjectsSectionType = {
       url: 'https://easy-fix.vercel.app/',
       repo: 'https://github.com/vatsalsinghkv/easy-fix',
       img: 'https://user-images.githubusercontent.com/68834718/258852895-df5c6da7-a698-40fb-97c3-a5474314cb85.png',
-      year: 2023,
-      tags: ['React', 'Tailwind'],
+      year: 2025,
+      tags: ['React + TS', 'Tailwind', 'Vitest'],
     },
     {
       id: getId(),
@@ -19,7 +19,7 @@ export const projectsSection: ProjectsSectionType = {
       url: 'https://beautiful-animations-kv.vercel.app/',
       repo: 'https://github.com/vatsalsinghkv/beautiful-animations',
       img: 'https://user-images.githubusercontent.com/68834718/265277125-da2a6e07-7cf6-411c-b55f-94e372aa6dc8.png',
-      year: 2023,
+      year: 2024,
       tags: ['CSS Animations', 'Sass'],
     },
     {
@@ -28,7 +28,7 @@ export const projectsSection: ProjectsSectionType = {
       url: 'https://buttons-animations-kv.vercel.app/',
       repo: 'https://github.com/vatsalsinghkv/button-animations',
       img: 'https://buttons-animations-kv.vercel.app/og.png',
-      year: 2023,
+      year: 2024,
       tags: ['CSS Animations', 'Sass'],
     },
     {
@@ -37,7 +37,7 @@ export const projectsSection: ProjectsSectionType = {
       url: 'https://image-animations.vercel.app/',
       repo: 'https://github.com/vatsalsinghkv/image-animations',
       img: 'https://github-production-user-asset-6210df.s3.amazonaws.com/68834718/252267106-857c5341-1106-4e84-b7e6-80a668a20ba8.png',
-      year: 2023,
+      year: 2024,
       tags: ['CSS Animations', 'Sass'],
     },
     {
@@ -46,7 +46,7 @@ export const projectsSection: ProjectsSectionType = {
       url: 'https://remotive-jobs.vercel.app/',
       repo: 'https://github.com/vatsalsinghkv/remotive-jobs',
       img: 'https://user-images.githubusercontent.com/68834718/189035104-aa71647e-33e4-442a-a2f9-c0d50bba2db1.png',
-      year: 2022,
+      year: 2023,
       tags: ['Nextjs', 'Sass'],
     },
     {
