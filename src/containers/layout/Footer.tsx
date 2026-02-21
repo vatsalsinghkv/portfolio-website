@@ -2,6 +2,8 @@ import { footerSection } from '@/lib/content/footer';
 
 import SocialLinks from '../Social/SocialLinks';
 
+import { BackToTop } from '@/components';
+
 const Footer = () => {
   return (
     <footer className="max-w-lg mx-auto mb-5 font-mono text-xs text-center">
@@ -14,6 +16,7 @@ const Footer = () => {
       >
         {footerSection.title}
       </a>
+      <BackToTop />
     </footer>
   );
 };
