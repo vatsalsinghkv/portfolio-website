@@ -5,6 +5,7 @@ import fontVariables from '@/lib/utils/fonts';
 import Cursor from '@/components/ui/Cursor';
 
 import '../styles/globals.css';
+import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -81,6 +82,7 @@ export default function RootLayout({
       <body className={`text-text bg-bg ${fontVariables}`}>
         <Cursor className="hidden dark:lg:block" />
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.0",
+    "@vercel/analytics": "^1.6.1",
     "clsx": "^2.0.0",
     "framer-motion": "^9.0.3",
     "husky": "^8.0.3",
