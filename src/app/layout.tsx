@@ -84,7 +84,9 @@ export default function RootLayout({
         <Cursor className="hidden dark:lg:block" />
         <ThemeProvider>{children}</ThemeProvider>
         <Analytics />
-        <GoogleAnalytics gaId="G-FMDR1L1E1D" />
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
       </body>
     </html>
   );
