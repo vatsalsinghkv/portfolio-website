@@ -5,8 +5,9 @@ import fontVariables from '@/lib/utils/fonts';
 import Cursor from '@/components/ui/Cursor';
 
 import '../styles/globals.css';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { Analytics } from '@vercel/analytics/next';
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: seoData.title,
@@ -83,6 +84,7 @@ export default function RootLayout({
         <Cursor className="hidden dark:lg:block" />
         <ThemeProvider>{children}</ThemeProvider>
         <Analytics />
+        <GoogleAnalytics gaId="G-FMDR1L1E1D" />
       </body>
     </html>
   );
