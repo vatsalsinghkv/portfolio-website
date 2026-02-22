@@ -1,4 +1,7 @@
 'use client';
+import { DarkModeToggle } from "./components";
+
+
 import { navbarSection } from '@/lib/content/navbar';
 import { author } from '@/lib/content/portfolio';
 import useWindowWidth from '@/lib/hooks/use-window-width';
@@ -137,7 +140,8 @@ const Navbar = () => {
                   {cta.title}
                 </Button>
               )}
-              <DarkModeButton
+              <DarkModeToggle
+
                 onClick={() => setNavbarCollapsed(false)}
                 variants={slideIn({
                   delay: ANIMATION_DELAY + (navLinks.length + 1) / 10,
