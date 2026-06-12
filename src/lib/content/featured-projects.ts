@@ -1,54 +1,50 @@
+import { FeaturedProjectType } from '@/lib/types';
 import { FeaturedProjectsSectionType } from '@/lib/types/sections';
-import { getId } from '@/lib/utils/helper';
+import { toId } from '@/lib/utils/helper';
 
-const featuredProjectsSection: FeaturedProjectsSectionType = {
-  title: "projects i've worked on",
-  projects: [
-    {
-      id: getId(),
-      name: 'PsyConnect',
-      description: 'A thoughtfully designed mental health platform.',
-      tasks:
-        'Led the end-to-end digital transformation of offline psychological services into a scalable web platform. Designed and developed a confidentiality-aware system with secure data workflows, appointment management, responsive UI, and accessibility-focused components. Collaborated closely with stakeholders to translate psychological service requirements into a calm, safe, and user-centered digital experience.',
-      url: 'https://psyconnect.co.in/',
-      img: 'https://psyconnect.co.in/images/og.png',
-      tags: [
-        'Next.js 14',
-        'TypeScript',
-        'TailwindCSS',
-        'ShadCN',
-        'Framer Motion',
-      ],
-    },
-    {
-      id: getId(),
-      name: 'GetLifeGuard',
-      description: 'An E-Commerce platform for Self-Defense Keychain.',
-      tasks:
-        "As a freelancer, I understood the client's requirements and executed a plan to develop and design an e-commerce platform, including the frontend UI, backend setup with database, APIs, and integration with payment platforms.",
-      url: 'https://getlifegard.vercel.app/',
-      img: 'https://getlifegard.vercel.app/images/og.png',
-      tags: [
-        'NextJs 14',
-        'TypeScript',
-        'TailwindCSS',
-        'ShadCN',
-        'Prisma',
-        'Stripe',
-      ],
-    },
+const projects: Omit<FeaturedProjectType, 'id'>[] = [
+  {
+    name: 'PsyConnect',
+    description: 'A thoughtfully designed mental health platform.',
+    tasks:
+      'Led the end-to-end digital transformation of offline psychological services into a scalable web platform. Designed and developed a confidentiality-aware system with secure data workflows, appointment management, responsive UI, and accessibility-focused components. Collaborated closely with stakeholders to translate psychological service requirements into a calm, safe, and user-centered digital experience.',
+    url: 'https://psyconnect.co.in/',
+    img: 'https://psyconnect.co.in/images/og.png',
+    tags: [
+      'Next.js 14',
+      'TypeScript',
+      'TailwindCSS',
+      'ShadCN',
+      'Framer Motion',
+    ],
+  },
+  {
+    name: 'GetLifeGuard',
+    description: 'An E-Commerce platform for Self-Defense Keychain.',
+    tasks:
+      "As a freelancer, I understood the client's requirements and executed a plan to develop and design an e-commerce platform, including the frontend UI, backend setup with database, APIs, and integration with payment platforms.",
+    url: 'https://getlifegard.vercel.app/',
+    img: 'https://getlifegard.vercel.app/images/og.png',
+    tags: [
+      'NextJs 14',
+      'TypeScript',
+      'TailwindCSS',
+      'ShadCN',
+      'Prisma',
+      'Stripe',
+    ],
+  },
 
-    {
-      id: getId(),
+  /* {
       name: 'Journally',
       url: 'https://journally-kv.vercel.app/',
       repo: 'https://github.com/vatsalsinghkv/journally',
       img: 'https://journally-kv.vercel.app/images/preview-close.png',
       // year: 2025,
       description:
-        'A privacy-first digital journaling platform for calm self-reflection.',
+      'A privacy-first digital journaling platform for calm self-reflection.',
       tasks:
-        'Designed and developed a full-stack journaling application with secure authentication, protected user data workflows, and scalable database architecture. Implemented complete CRUD functionality with server-side validation, focusing on privacy, accessibility, and a distraction-free user experience.',
+      'Designed and developed a full-stack journaling application with secure authentication, protected user data workflows, and scalable database architecture. Implemented complete CRUD functionality with server-side validation, focusing on privacy, accessibility, and a distraction-free user experience.',
       tags: [
         'Next.js 14',
         'TypeScript',
@@ -56,52 +52,55 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
         'Prisma',
         'PostgreSQL',
         'Better Auth',
-      ],
-    },
+        ],
+        }, */
 
-    /*  {
-      id: getId(),
-      name: 'Valuemetrix',
-      description: 'An AI Powered Investment Platform.',
-      tasks:
-        'I strategically planned project milestones, led a cross-functional team, established a design system, developed the website, and integrated Stripe payments with secure authentication.',
-      url: 'https://www.valuemetrix.io/',
-      img: 'https://www.valuemetrix.io/images/og.png',
-      tags: ['AI/ML', 'NextJs', 'TypeScript', 'TailwindCSS', 'Prisma'],
-    }, */
-    {
-      id: getId(),
-      name: 'Velvi Matrimony',
-      description:
-        'A platform that redefines the way individuals find their life partners.',
-      tasks:
-        'As a freelancer, I developed this project by planning, communicating with the client, gathering feedback, implementing UI & pages, and integrating real-time data fetching with filtering functionality.',
-      url: 'https://www.velvimatrimony.in/',
-      img: 'https://i.postimg.cc/tRS4GvzJ/Screenshot-2024-02-27-at-5-48-49-PM.png',
-      tags: ['NextJs', 'TypeScript', 'TailwindCSS', 'APIs'],
-    },
-    /*   {
-      id: getId(),
-      name: 'Integra',
-      description: 'An AI-Powered Leads Generation Platform.',
-      tasks:
-        'I strategically planned project milestones, led a cross-functional team, established a design system, developed the website, and integrated Stripe payments with secure authentication.',
-      url: 'https://www.integraleads.xyz/',
-      img: 'https://user-images.githubusercontent.com/68834718/279476369-2f69466a-71db-4da0-9afd-04f8f0efb621.jpeg',
-      tags: ['AI/ML', 'NextJs', 'TypeScript', 'TailwindCSS', 'Express'],
-    }, */
+  /*  {
+          name: 'Valuemetrix',
+          description: 'An AI Powered Investment Platform.',
+          tasks:
+          'I strategically planned project milestones, led a cross-functional team, established a design system, developed the website, and integrated Stripe payments with secure authentication.',
+          url: 'https://www.valuemetrix.io/',
+          img: 'https://www.valuemetrix.io/images/og.png',
+          tags: ['AI/ML', 'NextJs', 'TypeScript', 'TailwindCSS', 'Prisma'],
+          }, */
+  {
+    name: 'Velvi Matrimony',
+    description:
+      'A platform that redefines the way individuals find their life partners.',
+    tasks:
+      'As a freelancer, I developed this project by planning, communicating with the client, gathering feedback, implementing UI & pages, and integrating real-time data fetching with filtering functionality.',
+    url: 'https://www.velvimatrimony.in/',
+    img: 'https://i.postimg.cc/tRS4GvzJ/Screenshot-2024-02-27-at-5-48-49-PM.png',
+    tags: ['NextJs', 'TypeScript', 'TailwindCSS', 'APIs'],
+  },
+  /*   {
+            name: 'Integra',
+            description: 'An AI-Powered Leads Generation Platform.',
+            tasks:
+            'I strategically planned project milestones, led a cross-functional team, established a design system, developed the website, and integrated Stripe payments with secure authentication.',
+            url: 'https://www.integraleads.xyz/',
+            img: 'https://user-images.githubusercontent.com/68834718/279476369-2f69466a-71db-4da0-9afd-04f8f0efb621.jpeg',
+            tags: ['AI/ML', 'NextJs', 'TypeScript', 'TailwindCSS', 'Express'],
+            }, */
 
-    {
-      id: getId(),
-      name: 'Drafton',
-      description: 'The AI-powered platform that simplifies proposal creation.',
-      tasks:
-        'I designed and developed the landing page and implemented the dashboard by creating a user interface and integrating APIs.',
-      url: 'https://www.drafton.io/',
-      img: 'https://i.postimg.cc/4N6dsGcm/Screenshot-2024-06-17-at-11-05-22-PM.png',
-      tags: ['Open AI', 'NextJs', 'TypeScript', 'TailwindCSS', 'Prisma'],
-    },
-  ],
+  /* {
+              name: 'Drafton',
+              description: 'The AI-powered platform that simplifies proposal creation.',
+              tasks:
+              'I designed and developed the landing page and implemented the dashboard by creating a user interface and integrating APIs.',
+              url: 'https://www.drafton.io/',
+              img: 'https://i.postimg.cc/4N6dsGcm/Screenshot-2024-06-17-at-11-05-22-PM.png',
+              tags: ['Open AI', 'NextJs', 'TypeScript', 'TailwindCSS', 'Prisma'],
+              }, */
+];
+
+const featuredProjectsSection: FeaturedProjectsSectionType = {
+  title: "projects i've worked on",
+  projects: projects.map((project, i) => ({
+    ...project,
+    id: toId(project.name, i),
+  })),
 };
 
 export default featuredProjectsSection;

@@ -30,6 +30,16 @@ export const getBreakpointsWidth = (breakpoint: BreakpointType) => {
 export const getId = () => `id${Math.random().toString(16).slice(2)}`;
 
 /**
+ * Returns a unique id
+ * @returns {String} Unique id format id123..
+ */
+
+export const toId = (s: string, i?: number) =>
+  i == undefined
+    ? `id${s.toLowerCase().replaceAll(' ', '-')}`
+    : `id${s.toLowerCase().replaceAll(' ', '-')}-${i}`;
+
+/**
  * Returns the projects by sorting them by year (descending)
  * @param {ProjectType[]} projects array of projects
  * @returns {ProjectType[]} array of sorted projects

@@ -46,15 +46,19 @@ const ProjectCard = ({
         </div>
         <div className="p-4 py-3 space-y-1">
           <div className="flex items-center justify-between">
-            <p className="font-mono text-xs capitalize">{tags.join(' | ')}</p>
+            <p className="font-mono text-xs text-left capitalize">
+              {tags.join(' | ')}
+            </p>
             <div className="flex items-center space-x-1.5">
-              <a
-                href={repo}
-                className="block duration-200 hover:text-accent"
-                target="_blank"
-              >
-                <Icon icon="tabler:brand-github" width={20} height={20} />
-              </a>
+              {repo && (
+                <a
+                  href={repo}
+                  className="block duration-200 hover:text-accent"
+                  target="_blank"
+                >
+                  <Icon icon="tabler:brand-github" width={20} height={20} />
+                </a>
+              )}
               <a
                 href={url}
                 className="block duration-200 hover:text-accent"
