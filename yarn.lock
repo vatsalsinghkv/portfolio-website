@@ -249,7 +249,7 @@
 
 "@types/node@18.11.3":
   version "18.11.3"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.11.3.tgz"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.3.tgz#78a6d7ec962b596fc2d2ec102c4dd3ef073fea6a"
   integrity sha512-fNjDQzzOsZeKZu5NATgXUPsaFaTxeRgFXoosrHivTl8RGeV733OLawXsGfEk9a8/tySyZUyiZ6E8LcjPFZ2y1A==
 
 "@types/prop-types@*":

@@ -24,7 +24,7 @@ const About = () => {
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            Hi, my name is Vatsal Singh, a first-year MCA student at{' '}
+            Hi, my name is Vatsal Singh, a final-year MCA student at{' '}
             <Link
               href="https://bhu.ac.in/"
               target="_blank"
@@ -48,7 +48,7 @@ const About = () => {
             .
           </p>
           <p>
-            My main focus these days is learning mobile development and finding
+            My main focus these days is learning mobile development & web animations and finding
             a decent job.
           </p>
 

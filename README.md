@@ -76,11 +76,9 @@
 ```
 
 - To change the content, edit `src/lib/content/`
-
 - To change the **resume**, change `/public/resume.pdf` with your resume (name must be `resume.pdf`)
-
 - To change the **About Section**, edit `src/containers/About.tsx`
-
+- To change the **image**, change `/public/me.png` with your image (name must be `me.png`)
 - To change the theme, edit `src/styles/globals.css`
 
 ## Contributing
