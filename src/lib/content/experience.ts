@@ -7,15 +7,15 @@ export const experienceSection: ExperienceSectionType = {
       company: 'PsyConnect',
       companyUrl: 'https://psyconnect.co.in/',
       role: 'full-stack developer intern',
-      started: 'june 2025',
+      started: 'july 2025',
       upto: 'current',
       tasks: [
-        'Spearheading the digital transformation of services, moving from offline operations to an accessible online platform.',
-        'Led end-to-end website development, overseeing technical direction and project execution.',
-        'Mentored and guided two development interns to ensure quality deliverables and skill growth.'
+        'Built a mental health platform serving 100+ users and 10+ psychologists.',
+        'Led architecture and frontend development using Next.js and TypeScript.',
+        'Streamlined deployments with CI/CD and mentored junior developers.',
       ],
     },
-    {
+    /* {
       company: 'Dashseller',
       companyUrl: 'https://www.dashseller.com/',
       role: 'full-stack developer',
@@ -25,7 +25,7 @@ export const experienceSection: ExperienceSectionType = {
         'Implemented development tools, GitHub Actions, workflows, and Git flow to seamless collaboration.',
         'Integrated Notion as a CMS to manage and display content such as blogs, job postings, and documentation.',
       ],
-    },
+    }, */
     {
       company: 'Pixelwand',
       companyUrl: 'https://www.pixelwand.live/',
@@ -51,7 +51,7 @@ export const experienceSection: ExperienceSectionType = {
         'Collaborated with diverse nationwide team of developers.',
       ],
     },
-    {
+    /* {
       company: 'webnetics',
       companyUrl: 'https://webnetic.vercel.app/',
       role: 'frontend developer',
@@ -63,6 +63,6 @@ export const experienceSection: ExperienceSectionType = {
         'Reviewed and approved pull requests to maintain code quality and consistency.',
         'Collaborated remotely with a globally distributed team, leveraging screen-sharing for effective communication.',
       ],
-    },
+    }, */
   ],
 };
