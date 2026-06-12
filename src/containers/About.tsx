@@ -1,7 +1,7 @@
 'use client';
 import { aboutSection } from '@/lib/content/about';
 import { author } from '@/lib/content/portfolio';
-import { getId } from '@/lib/utils/helper';
+import { toId } from '@/lib/utils/helper';
 
 import { AuthorImage, Link, ListItem, Wrapper } from '@/components';
 
@@ -48,8 +48,8 @@ const About = () => {
             .
           </p>
           <p>
-            My main focus these days is learning mobile development & web animations and finding
-            a decent job.
+            My main focus these days is learning mobile development & web
+            animations and finding a decent job.
           </p>
 
           {list && (
@@ -57,7 +57,7 @@ const About = () => {
               <p>{list.title}</p>
               <ul className="grid w-2/3 grid-cols-2 gap-1 text-sm">
                 {list.items.map((item) => (
-                  <ListItem key={getId()}>{item}</ListItem>
+                  <ListItem key={toId(item)}>{item}</ListItem>
                 ))}
               </ul>
             </>

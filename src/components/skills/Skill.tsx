@@ -1,11 +1,11 @@
 'use client';
 import { SoftwareSkillType } from '@/lib/types';
-import { getId } from '@/lib/utils/helper';
+import { toId } from '@/lib/utils/helper';
 
 import { ListItem, SkillIcon } from '@/components';
-import { motion, MotionProps } from 'framer-motion';
-
 import { DynamicShowLottie } from '@/components/dynamic/Dynamic';
+
+import { motion, MotionProps } from 'framer-motion';
 
 type Props = {
   lottie?: any;
@@ -34,15 +34,15 @@ const Skill = ({
           {title}
         </h3>
 
-        <div key={getId()} className="flex flex-wrap justify-center gap-2">
+        <div key={toId(title)} className="flex flex-wrap justify-center gap-2">
           {skills.map(({ name, icon }) => (
-            <SkillIcon key={getId()} src={icon} name={name} />
+            <SkillIcon key={toId(name)} src={icon} name={name} />
           ))}
         </div>
 
         <ul className="space-y-2 text-base">
           {points.map((point) => (
-            <ListItem key={getId()}>{point}</ListItem>
+            <ListItem key={toId(point)}>{point}</ListItem>
           ))}
         </ul>
       </div>

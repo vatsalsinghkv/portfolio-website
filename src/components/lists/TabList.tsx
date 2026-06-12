@@ -1,7 +1,7 @@
 'use client';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { ExperienceType } from '@/lib/types';
-import { getBreakpointsWidth, getId } from '@/lib/utils/helper';
+import { getBreakpointsWidth, toId } from '@/lib/utils/helper';
 
 import { Link, ListItem } from '@/components';
 
@@ -35,7 +35,7 @@ const TabList = ({ experiences }: Props) => {
       <div className="font-mono text-xs sm:text-sm relative flex justify-start sm:flex-col overflow-scroll sm:overflow-auto sm:min-w-[180px]">
         {experiences.map(({ company }, i) => (
           <button
-            key={getId()}
+            key={toId(company, i)}
             className={`h-10 min-w-[120px] sm:w-auto sm:px-5 sm:!text-left capitalize hover:bg-accent-light hover:text-accent focus:outline-none focus:bg-accent-light focus:text-accent ${
               i === activeExperience ? 'text-accent' : ''
             }`}
@@ -52,7 +52,7 @@ const TabList = ({ experiences }: Props) => {
         ></div>
       </div>
 
-      <div key={getId()} className="p-1 space-y-5">
+      <div key={toId(`${role} ${company}`)} className="p-1 space-y-5">
         <div className="space-y-1">
           <h3 className="text-lg font-medium capitalize text-dark-2">
             {role}{' '}
@@ -69,7 +69,7 @@ const TabList = ({ experiences }: Props) => {
 
         <ul className="space-y-2">
           {tasks.map((task) => (
-            <ListItem key={getId()}>{task}</ListItem>
+            <ListItem key={toId(task)}>{task}</ListItem>
           ))}
         </ul>
       </div>
