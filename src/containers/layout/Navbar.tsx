@@ -61,7 +61,7 @@ const NavItem = ({ href, children, onClick, index, delay }: NavItemsProps) => {
     >
       <CLink
         href={href || `/#${children}`}
-        className="block p-2 duration-500 hover:text-accent"
+        className="block p-2 duration-500"
         onClick={onClick}
         withPadding
       >

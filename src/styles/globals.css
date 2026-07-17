@@ -43,7 +43,11 @@
   }
 
   * {
-    @apply focus:outline-dashed outline-[3px] outline-offset-4 outline-accent;
+    @apply focus-visible:outline-dashed outline-[3px] outline-offset-4 outline-accent;
+  }
+
+  a {
+    @apply duration-200 hover:text-accent focus-visible:text-accent;
   }
 
   ::selection {

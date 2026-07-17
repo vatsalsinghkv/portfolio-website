@@ -9,7 +9,7 @@ const SocialLink = ({ href, children, className = '' }: Props) => {
     <a
       href={href}
       target="_blank"
-      className={`block text-sm p-2.5 hover:text-accent hover:-translate-y-1 focus:outline-none focus:text-accent focus:-translate-y-1 duration-200 ${className}`}
+      className={`block text-sm p-2.5  hover:-translate-y-1 focus-visible:outline-none focus-visible:text-accent focus-visible:-translate-y-1  ${className}`}
     >
       {children}
     </a>

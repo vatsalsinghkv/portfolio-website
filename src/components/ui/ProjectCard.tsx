@@ -41,7 +41,7 @@ const ProjectCard = ({
             height={300}
             placeholder="blur"
             blurDataURL={blurImageURL}
-            className="object-cover w-full h-full transition-all duration-300 group-hover:scale-110 group-focus:scale-110"
+            className="object-cover w-full h-full transition-all duration-300 group-hover:scale-110 group-focus-visible:scale-110"
           />
         </div>
         <div className="p-4 py-3 space-y-1">
@@ -51,19 +51,11 @@ const ProjectCard = ({
             </p>
             <div className="flex items-center space-x-1.5">
               {repo && (
-                <a
-                  href={repo}
-                  className="block duration-200 hover:text-accent"
-                  target="_blank"
-                >
+                <a href={repo} className="block" target="_blank">
                   <Icon icon="tabler:brand-github" width={20} height={20} />
                 </a>
               )}
-              <a
-                href={url}
-                className="block duration-200 hover:text-accent"
-                target="_blank"
-              >
+              <a href={url} className="block" target="_blank">
                 <Icon icon="ci:external-link" width={22} height={22} />
               </a>
             </div>

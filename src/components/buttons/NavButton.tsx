@@ -12,14 +12,14 @@ const NavButton = ({ onClick, className, navbarCollapsed }: Props) => {
 
   return (
     <button
-      className={`${className} w-7 h-7 group transition focus:outline-none`}
+      className={`${className} w-7 h-7 group transition focus-visible:outline-none`}
       onClick={onClick}
     >
       <div
         className={`flex flex-col items-end relative ${
           navbarCollapsed
             ? 'space-y-0 rotate-90 duration-300 delay-100'
-            : 'group-hover:space-y-1 group-focus:space-y-1 space-y-1.5'
+            : 'group-hover:space-y-1 group-focus-visible:space-y-1 space-y-1.5'
         }`}
       >
         <div

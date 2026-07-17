@@ -23,7 +23,7 @@ const Link = ({
       >
         <span className="relative w-fit">
           {children}
-          <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 group-hover:w-full group-focus:w-full bg-accent duration-300 ease-in-scroll"></span>
+          <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 group-hover:w-full group-focus-visible:w-full bg-accent duration-300 ease-in-scroll"></span>
         </span>
       </a>
     );
@@ -37,7 +37,7 @@ const Link = ({
       {...rest}
     >
       {children}
-      <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 group-hover:w-full group-focus:outline-none group-focus:w-full bg-accent duration-300 ease-in-scroll"></span>
+      <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 group-hover:w-full group-focus-visible:outline-none group-focus-visible:w-full bg-accent duration-300 ease-in-scroll"></span>
     </a>
   );
 };

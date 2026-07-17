@@ -58,7 +58,7 @@ const FeaturedProject = ({
             'absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0',
             'lg:h-auto left-0 lg:left-auto top-0 right-auto lg:bg-none lg:text-inherit',
             'flex flex-col justify-end',
-            'bg-gradient-to-t from-black/80 group-hover:from-accent group-focus:from-accent',
+            'bg-gradient-to-t from-black/80 group-hover:from-accent group-focus-visible:from-accent',
             align === 'left' && 'lg:left-0'
           )}
         >
@@ -67,13 +67,9 @@ const FeaturedProject = ({
               featured project
             </div>
             <h2 className="heading-tertiary inline-block !text-white lg:!text-dark-2 !font-semibold lg:!font-normal !normal-case">
-              <a
-                href={url}
-                className="block duration-200 hover:text-accent"
-                target="_blank"
-              >
+              <Link href={url} className="block" target="_blank">
                 {name}
-              </a>
+              </Link>
             </h2>
           </div>
 
@@ -112,18 +108,10 @@ const FeaturedProject = ({
                 align === 'left' && 'lg:justify-start'
               )}
             >
-              <a
-                href={repo}
-                className="block duration-200 hover:text-accent"
-                target="_blank"
-              >
+              <a href={repo} className="block" target="_blank">
                 <Icon icon="tabler:brand-github" width={22} height={22} />
               </a>
-              <a
-                href={url}
-                className="block duration-200 hover:text-accent"
-                target="_blank"
-              >
+              <a href={url} className="block" target="_blank">
                 <Icon icon="ci:external-link" width={24} height={24} />
               </a>
             </div>
@@ -162,11 +150,7 @@ const FeaturedProject = ({
               featured project
             </div> */}
             <h2 className="heading-tertiary !text-white !font-semibold !normal-case">
-              <a
-                href={url}
-                className="block duration-200 hover:text-accent"
-                target="_blank"
-              >
+              <a href={url} className="block" target="_blank">
                 {name}
               </a>
             </h2>
@@ -202,18 +186,10 @@ const FeaturedProject = ({
                 align === 'left' && 'lg:justify-start'
               )}
             >
-              <a
-                href={repo}
-                className="block duration-200 hover:text-accent"
-                target="_blank"
-              >
+              <a href={repo} className="block duration-200" target="_blank">
                 <Icon icon="tabler:brand-github" width={22} height={22} />
               </a>
-              <a
-                href={url}
-                className="block duration-200 hover:text-accent"
-                target="_blank"
-              >
+              <a href={url} className="block duration-200" target="_blank">
                 <Icon icon="ci:external-link" width={24} height={24} />
               </a>
             </div>
