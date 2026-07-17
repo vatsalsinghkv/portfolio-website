@@ -34,7 +34,6 @@ const FeaturedProject = ({
         <div
           className={cn(
             'w-full lg:max-w-[60%] absolute inset-0 h-full -z-20 lg:z-0 lg:object-contain rounded overflow-hidden shadow-2xl group',
-
             align === 'left' && 'ml-auto'
           )}
         >
@@ -67,7 +66,7 @@ const FeaturedProject = ({
             <div className="font-mono hidden lg:block text-accent capitalize text-xs lg:mb-2.5">
               featured project
             </div>
-            <h2 className="heading-tertiary !text-white lg:!text-dark-2 !font-semibold lg:!font-normal !normal-case">
+            <h2 className="heading-tertiary inline-block !text-white lg:!text-dark-2 !font-semibold lg:!font-normal !normal-case">
               <a
                 href={url}
                 className="block duration-200 hover:text-accent"
