@@ -2,6 +2,8 @@ import { footerSection } from '@/lib/content/footer';
 
 import SocialLinks from '../Social/SocialLinks';
 
+import { BackToTop } from '@/components';
+
 const Footer = () => {
   return (
     <footer className="max-w-lg mx-auto mb-5 font-mono text-xs text-center">
@@ -9,6 +11,7 @@ const Footer = () => {
       <a href={footerSection.link} target="_blank" rel="noopener noreferrer">
         {footerSection.title}
       </a>
+      <BackToTop />
     </footer>
   );
 };
