@@ -6,7 +6,6 @@ const projects: Omit<ProjectType, 'id'>[] = [
   {
     name: 'journally',
     url: 'https://journally-kv.vercel.app/',
-    // repo: 'https://github.com/vatsalsinghkv/journally',
     img: 'https://journally-kv.vercel.app/images/preview-close.png',
     year: 2026,
     tags: ['Next.js + TS', 'Tailwind', 'Prisma', 'PostgreSQL', 'Better Auth'],

@@ -8,7 +8,7 @@ export const experienceSection: ExperienceSectionType = {
       companyUrl: 'https://psyconnect.co.in/',
       role: 'full-stack developer intern',
       started: 'july 2025',
-      upto: 'current',
+      upto: 'Aug 2026',
       tasks: [
         'Built a mental health platform serving 100+ users and 10+ psychologists.',
         'Led architecture and frontend development using Next.js and TypeScript.',
